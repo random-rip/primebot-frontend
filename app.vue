@@ -1,32 +1,109 @@
 <template>
-  <div>
-    <n-result status="success" title="succss" description="Naive-ui + Nuxt rc1">
-      <template #footer>
-        <n-space justify="center">
-          <n-button type="success">Naive-ui</n-button>
-          <n-button type="success" secondary>+</n-button>
-          <n-button type="success">Nuxt rc1</n-button>
-        </n-space>
-      </template>
-    </n-result>
-    <n-space>
-      <n-button type="primary">naive-ui</n-button>
-      <n-button type="info">naive-ui</n-button>
-      <n-button type="warning">naive-ui</n-button>
-    </n-space>
-    <n-h2>Tooltip demo</n-h2>
-    <n-tooltip trigger="hover">
-      <template #trigger>
-        <n-button>鸭子</n-button>
-      </template>
-      如果它长得像鸭子，走起来像鸭子，叫起来也像鸭子，那它一定是个鸭子。
-    </n-tooltip>
-    <n-h1>特点</n-h1>
-    <n-space>
-      <n-tag>Nuxt3</n-tag>
-      <n-tag>Vite</n-tag>
-      <n-tag>Naive-ui</n-tag>
-      <n-tag>SEO friendly</n-tag>
-    </n-space>
-  </div>
+  <n-layout class="h-screen">
+    <n-layout-header bordered style="height: 64px; padding-left: 24px; padding-right: 24px">
+      <div class="flex flex-row justify-between w-full h-full">
+        <span class="my-auto">PrimeBot</span>
+        <n-menu mode="horizontal" :options="menuOptions" class="my-auto"/>
+      </div>
+    </n-layout-header>
+    <n-layout position="absolute" style="top: 64px; bottom: 64px" :native-scrollbar="false">
+      <n-layout-content content-style="padding: 24px">
+        <NuxtPage/>
+      </n-layout-content>
+    </n-layout>
+    <n-layout-footer
+        position="absolute"
+        style="height: 64px; padding: 24px"
+        bordered
+    >
+      Footer Footer Footer
+    </n-layout-footer>
+  </n-layout>
 </template>
+
+<script setup lang="ts">
+import {NIcon} from 'naive-ui'
+import {
+  BookOutline as BookIcon,
+  PersonOutline as PersonIcon,
+  WineOutline as WineIcon
+} from '@vicons/ionicons5'
+
+function renderIcon(icon: any) {
+  return () => h(NIcon, null, {default: () => h(icon)})
+}
+
+const menuOptions = [
+  {
+    label: 'Home',
+    key: 'home',
+  },
+  {
+    label: 'Get Started',
+    key: 'pinball-1973',
+    icon: renderIcon(BookIcon),
+    disabled: true,
+    children: [
+      {
+        label: 'Rat',
+        key: 'rat'
+      }
+    ]
+  },
+  {
+    label: 'A Wild Sheep Chase',
+    key: 'a-wild-sheep-chase',
+    disabled: true,
+    icon: renderIcon(BookIcon)
+  },
+  {
+    label: 'Dance Dance Dance',
+    key: 'Dance Dance Dance',
+    icon: renderIcon(BookIcon),
+    children: [
+      {
+        type: 'group',
+        label: 'People',
+        key: 'people',
+        children: [
+          {
+            label: 'Narrator',
+            key: 'narrator',
+            icon: renderIcon(PersonIcon)
+          },
+          {
+            label: 'Sheep Man',
+            key: 'sheep-man',
+            icon: renderIcon(PersonIcon)
+          }
+        ]
+      },
+      {
+        label: 'Beverage',
+        key: 'beverage',
+        icon: renderIcon(WineIcon),
+        children: [
+          {
+            label: 'Whisky',
+            key: 'whisky'
+          }
+        ]
+      },
+      {
+        label: 'Food',
+        key: 'food',
+        children: [
+          {
+            label: 'Sandwich',
+            key: 'sandwich'
+          }
+        ]
+      },
+      {
+        label: 'The past increases. The future recedes.',
+        key: 'the-past-increases-the-future-recedes'
+      }
+    ]
+  }
+]
+</script>
