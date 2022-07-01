@@ -4,6 +4,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "pre": "npm run build && npm run start",
+    "generate": "nuxi generate",
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
@@ -14,5 +15,8 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4",
     "unplugin-vue-components": "^0.17.21"
+  },
+  "dependencies": {
+    "sass": "^1.53.0"
   }
 }

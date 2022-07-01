@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         '@nuxt/content'
     ],
     build: {
-        transpile: ['vueuc'],   // fix dev error: Cannot find module 'vueuc'
+        transpile: ['vueuc', 'naive-ui'],   // fix dev error: Cannot find module 'vueuc'
         postcss: {
             postcssOptions: require('./postcss.config.js'),
         },
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     vite: {
         plugins: [
             Components({
-                resolvers: [NaiveUiResolver()], // Automatically register all components in the `components` directory
+                resolvers: [NaiveUiResolver()], // Automatically register all content in the `content` directory
             }),
         ],
         // @ts-expect-error: Missing ssr key
@@ -24,4 +24,26 @@ export default defineNuxtConfig({
         },
     },
     css: ['@/assets/css/main.css'],
+    components: true,
+    content: {
+        markdown: {
+            tags: {
+                h1: 'n-h1',
+                h2: 'n-h2',
+                h3: 'n-h3',
+                h4: 'n-h4',
+                h5: 'n-h5',
+                h6: 'n-h6',
+                p: 'n-p',
+                ol: 'n-ol',
+                ul: 'n-ul',
+                li: 'n-li',
+            }
+        }
+    },
+    vue: {
+        compilerOptions: {
+            isCustomElement: tag => ['vaadin-checkbox'].includes(tag)
+        }
+    },
 })
