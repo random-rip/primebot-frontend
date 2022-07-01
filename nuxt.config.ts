@@ -35,7 +35,8 @@ export default defineNuxtConfig({
                 ol: 'n-ol',
                 ul: 'n-ul',
                 li: 'n-li',
-                a: 'n-a'
+                a: 'n-a',
+                blockquote: 'n-blockquote',
             }
         }
     },
