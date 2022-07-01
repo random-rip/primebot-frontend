@@ -1,4 +1,6 @@
-## Impressum
+::h1
+Impressum
+::
 
 - Angaben gemäß §5 TMG
 - Janek Mangold

@@ -1,26 +1,23 @@
 import { defineNuxtConfig } from 'nuxt'
-import Components from 'unplugin-vue-components/vite';
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content'
     ],
     build: {
-        transpile: ['vueuc', 'naive-ui'],   // fix dev error: Cannot find module 'vueuc'
+        transpile: [
+            "naive-ui",
+            "vueuc",
+            "@css-render/vue3-ssr",
+            "@juggle/resize-observer",
+        ],
         postcss: {
             postcssOptions: require('./postcss.config.js'),
         },
     },
     vite: {
-        plugins: [
-            Components({
-                resolvers: [NaiveUiResolver()], // Automatically register all content in the `content` directory
-            }),
-        ],
-        // @ts-expect-error: Missing ssr key
-        ssr: {
-            noExternal: ['moment', 'naive-ui', '@juggle/resize-observer', '@css-render/vue3-ssr'],
+        optimizeDeps: {
+            include: ["date-fns-tz/esm/formatInTimeZone"],
         },
     },
     css: ['@/assets/css/main.css'],
@@ -38,12 +35,8 @@ export default defineNuxtConfig({
                 ol: 'n-ol',
                 ul: 'n-ul',
                 li: 'n-li',
+                a: 'n-a'
             }
-        }
-    },
-    vue: {
-        compilerOptions: {
-            isCustomElement: tag => ['vaadin-checkbox'].includes(tag)
         }
     },
 })

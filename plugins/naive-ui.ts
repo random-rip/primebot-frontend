@@ -7,12 +7,30 @@ import naive from "naive-ui";
 export default defineNuxtPlugin((nuxtApp) => {
     if (process.server) {
         const { collect } = setup(nuxtApp.vueApp);
-        const originalRender = nuxtApp.ssrContext.renderMeta
-        nuxtApp.ssrContext!.renderMeta = () => {
-            const result = originalRender();
-            return {
-                headTags: result['headTags'] + collect()
-            };
+        const originalRenderMeta = nuxtApp.ssrContext?.renderMeta;
+        // @ts-expect-error: ??
+        nuxtApp.ssrContext = nuxtApp.ssrContext || {};
+        // @ts-expect-error: ??
+        nuxtApp.ssrContext.renderMeta = () => {
+            if (!originalRenderMeta) {
+                return {
+                    headTags: collect(),
+                };
+            }
+            const originalMeta = originalRenderMeta();
+            if ("then" in originalMeta) {
+                return originalMeta.then((resolvedOriginalMeta) => {
+                    return {
+                        ...resolvedOriginalMeta,
+                        headTags: resolvedOriginalMeta["headTags"] + collect(),
+                    };
+                });
+            } else {
+                return {
+                    ...originalMeta,
+                    headTags: originalMeta["headTags"] + collect(),
+                };
+            }
         };
     }
     if (process.client) {
@@ -20,6 +38,8 @@ export default defineNuxtPlugin((nuxtApp) => {
         meta.name = 'naive-ui-style'
         document.head.appendChild(meta)
     }
-    nuxtApp.vueApp.use(naive);
+
+    nuxtApp.vueApp.use(naive)
+
 });
 
