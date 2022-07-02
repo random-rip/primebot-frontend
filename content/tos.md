@@ -1,4 +1,7 @@
-# Nutzungsbedingungen
+---
+title: "Nutzungsbedingungen"
+---
+## Nutzungsbedingungen
 
 Der PrimeBot (im folgenden als "Bot" bezeichnet) ist als Unterstützung für Teams und Spieler:innen der PrimeLeague
 gedacht.

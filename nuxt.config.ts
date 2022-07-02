@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
     modules: [
-        '@nuxt/content'
+        '@nuxt/content',
     ],
     build: {
         transpile: [

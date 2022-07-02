@@ -1,24 +1,34 @@
 <template>
-  <n-layout class="h-screen">
-    <n-layout-header bordered style="height: 64px; padding-left: 24px; padding-right: 24px; position: fixed">
-      <div class="flex flex-row justify-between w-full h-full">
-        <span class="my-auto">PrimeBot</span>
-        <n-menu mode="horizontal" :options="menuOptions" class="my-auto"/>
-      </div>
-    </n-layout-header>
-    <n-layout position="absolute" style="top: 64px" :native-scrollbar="false">
-      <n-layout-content content-style="padding: 24px">
-        <NuxtPage/>
-      </n-layout-content>
-      <n-layout-footer
-          style="height: 64px; padding: 24px"
-          bordered
-      >
-        Footer Footer Footer
-      </n-layout-footer>
-    </n-layout>
-  </n-layout>
-
+  <n-config-provider>
+    <n-message-provider>
+      <n-notification-provider>
+        <n-loading-bar-provider>
+          <n-dialog-provider>
+            <n-layout class="h-screen">
+              <n-layout-header bordered
+                               style="height: 64px; padding-left: 24px; padding-right: 24px; position: fixed">
+                <div class="flex flex-row justify-between w-full h-full">
+                  <span class="my-auto">PrimeBot</span>
+                  <n-menu mode="horizontal" :options="menuOptions" class="my-auto"/>
+                </div>
+              </n-layout-header>
+              <n-layout position="absolute" style="top: 64px" :native-scrollbar="false">
+                <n-layout-content content-style="padding: 24px" class="min-h-[calc(100vh-128px)]">
+                  <NuxtPage/>
+                </n-layout-content>
+                <n-layout-footer
+                    style="height: 64px; padding: 24px"
+                    bordered
+                >
+                  Footer Footer Footer
+                </n-layout-footer>
+              </n-layout>
+            </n-layout>
+          </n-dialog-provider>
+        </n-loading-bar-provider>
+      </n-notification-provider>
+    </n-message-provider>
+  </n-config-provider>
 </template>
 
 <script setup lang="ts">
