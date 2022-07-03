@@ -4,16 +4,17 @@
       <n-notification-provider>
         <n-loading-bar-provider>
           <n-dialog-provider>
-            <n-layout class="h-screen">
+            <n-layout style="height: 100vh">
               <n-layout-header bordered
                                style="height: 64px; padding-left: 24px; padding-right: 24px; position: fixed">
-                <div class="flex flex-row justify-between w-full h-full">
-                  <span class="my-auto">PrimeBot</span>
-                  <n-menu mode="horizontal" :options="menuOptions" class="my-auto"/>
-                </div>
+                <n-space justify="space-between" align="center" style="height: 100%">
+                  <span>PrimeBot</span>
+                  <n-menu mode="horizontal" :options="menuOptions"></n-menu>
+                </n-space>
               </n-layout-header>
               <n-layout position="absolute" style="top: 64px" :native-scrollbar="false">
-                <n-layout-content content-style="padding: 24px" class="min-h-[calc(100vh-128px)]">
+                <n-layout-content content-style="padding: 24px">
+                  <!-- TODO: min Height min-h-[calc(100vh-128px)]-->
                   <NuxtPage/>
                 </n-layout-content>
                 <n-layout-footer
@@ -32,7 +33,20 @@
 </template>
 
 <script setup lang="ts">
-import {NIcon} from "naive-ui";
+import {
+  NConfigProvider,
+  NDialogProvider,
+  NNotificationProvider,
+  NIcon,
+  NLayout,
+  NLayoutContent,
+  NLayoutFooter,
+  NLayoutHeader,
+  NLoadingBarProvider,
+  NMenu,
+  NMessageProvider,
+  NSpace
+} from "naive-ui";
 
 function renderIcon(icon: any) {
   return () => h(NIcon, null, {default: () => h(icon)})
