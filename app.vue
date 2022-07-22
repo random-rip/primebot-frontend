@@ -13,8 +13,7 @@
                 </n-space>
               </n-layout-header>
               <n-layout position="absolute" style="top: 64px" :native-scrollbar="false">
-                <n-layout-content content-style="padding: 24px">
-                  <!-- TODO: min Height min-h-[calc(100vh-128px)]-->
+                <n-layout-content content-style="padding: 24px" class="min-h-[calc(100vh-128px)]">
                   <NuxtPage/>
                 </n-layout-content>
                 <n-layout-footer
@@ -34,9 +33,9 @@
 
 <script setup lang="ts">
 import {
+  MenuOption, NButton,
   NConfigProvider,
   NDialogProvider,
-  NNotificationProvider,
   NIcon,
   NLayout,
   NLayoutContent,
@@ -45,16 +44,26 @@ import {
   NLoadingBarProvider,
   NMenu,
   NMessageProvider,
+  NNotificationProvider,
   NSpace
 } from "naive-ui";
+
+import {NuxtLink} from "#components";
 
 function renderIcon(icon: any) {
   return () => h(NIcon, null, {default: () => h(icon)})
 }
 
-const menuOptions = [
+const menuOptions: Array<MenuOption> = [
   {
-    label: 'Startseite',
+    label: () =>
+        h(
+            NuxtLink,
+            {
+              to: '/'
+            },
+            {default: () => 'Home'}
+        ),
     key: 'home',
     // icon: renderIcon(HomeIcon)
   },
@@ -64,12 +73,26 @@ const menuOptions = [
     // icon: renderIcon(MLIcon),
     children: [
       {
-        label: 'Discord',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/get-started/discord'
+                },
+                { default: () => 'Discord' }
+            ),
         key: 'discord',
         // icon: renderIcon(DiscordIcon),
       },
       {
-        label: 'Telegram',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/get-started/telegram'
+                },
+                { default: () => 'Telegram' }
+            ),
         key: 'telegram',
         // icon: renderIcon(TelegramIcon),
       }
@@ -81,27 +104,62 @@ const menuOptions = [
     // icon: renderIcon(InfoIcon),
     children: [
       {
-        label: 'Kontakt',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/information/contact'
+                },
+                { default: () => 'Kontakt' }
+            ),
         key: 'contact',
         // icon: renderIcon(ContactIcon),
       },
       {
-        label: 'Teams',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/information/teams'
+                },
+                { default: () => 'Infos' }
+            ),
         key: 'teams',
         // icon: renderIcon(TeamIcon)
       },
       {
-        label: 'Changelog',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/information/changelog'
+                },
+                { default: () => 'Changelog' }
+            ),
         key: 'changelog',
         // icon: renderIcon(ChangelogIcon)
       },
       {
-        label: 'Status',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/information/status'
+                },
+                { default: () => 'Status' }
+            ),
         key: 'status',
         // icon: renderIcon(StatusIcon)
       },
       {
-        label: 'Open Source',
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/information/open-source'
+                },
+                { default: () => 'Open Source' }
+            ),
         key: 'open-source',
         // icon: renderIcon(GithubIcon)
       }
@@ -109,3 +167,7 @@ const menuOptions = [
   },
 ]
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/css/main.css';
+</style>

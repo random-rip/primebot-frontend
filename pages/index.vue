@@ -1,6 +1,6 @@
 <template>
   <main>
-    test<br>
+    <NuxtLink to="/tos">TOS</NuxtLink><br>test<br>
     test<br>
     test<br>
     test<br>
