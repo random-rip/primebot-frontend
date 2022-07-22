@@ -1,17 +1,8 @@
 <template>
   <NCollapse display-directive="show">
-<!--    <n-collapse-item v-for="faq in data" :key="faq.title" :title="faq.title" :name="faq.title">-->
-<!--      <div>test</div>-->
-<!--    </n-collapse-item>-->
-    <NCollapseItem title="right" name="1">
-      <div>good</div>
-    </NCollapseItem>
-<!--    <n-collapse-item title="right" name="2">-->
-<!--      <div>nice</div>-->
-<!--    </n-collapse-item>-->
-<!--    <n-collapse-item title="right" name="3">-->
-<!--      <div>very good</div>-->
-<!--    </n-collapse-item>-->
+      <NCollapseItem :title="faq.title" :name="faq._path" v-for="faq in data">
+        <ContentRenderer :value="faq"></ContentRenderer>
+      </NCollapseItem>
   </NCollapse>
 </template>
 

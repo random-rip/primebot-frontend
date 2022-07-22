@@ -13,7 +13,7 @@
                 </n-space>
               </n-layout-header>
               <n-layout position="absolute" style="top: 64px" :native-scrollbar="false">
-                <n-layout-content content-style="padding: 24px" class="min-h-[calc(100vh-128px)]">
+                <n-layout-content content-style="padding: 24px" class="min-h-[calc(100vh-128px)] max-w-5xl mx-auto">
                   <NuxtPage/>
                 </n-layout-content>
                 <n-layout-footer
