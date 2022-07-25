@@ -6,7 +6,7 @@
   <n-grid cols="1 600:3" x-gap="10" y-gap="10">
     <n-grid-item v-for="member in crewMembers">
       <n-card :title="member.name">
-        <template #cover>
+        <template #cover v-if="member.image">
           <img :src="member.image" :alt="`avatar-${member.name}`">
         </template>
         {{ member.role }}

@@ -20,7 +20,7 @@
                     style="height: 64px; padding: 24px"
                     bordered
                 >
-                  Footer Footer Footer
+                  <v-footer></v-footer>
                 </n-layout-footer>
               </n-layout>
             </n-layout>
@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 import {
-  MenuOption, NButton,
+  MenuOption,
   NConfigProvider,
   NDialogProvider,
   NIcon,
@@ -124,6 +124,7 @@ const menuOptions: Array<MenuOption> = [
                 },
                 { default: () => 'Infos' }
             ),
+        disabled: true,
         key: 'teams',
         // icon: renderIcon(TeamIcon)
       },
