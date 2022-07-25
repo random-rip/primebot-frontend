@@ -1,3 +1,3 @@
 <template>
-  <n-h1>CONTACT</n-h1>
+  <ContentDoc path="/open-source"></ContentDoc>
 </template>
