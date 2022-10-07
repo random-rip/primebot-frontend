@@ -1,7 +1,3 @@
-import {defineNuxtConfig} from "nuxt";
-
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
-// @ts-ignore
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
@@ -49,7 +45,17 @@ export default defineNuxtConfig({
                 li: 'VLi',
                 a: 'VA',
                 blockquote: 'VBlockquote',
-                table: 'VTable'
+                table: 'VTable',
+                'discord-message': 'VDiscordMessage',
+                'discord-messages': 'VDiscordMessages',
+                'discord-interaction': 'VDiscordInteraction',
+                'discord-markdown': 'VDiscordMarkdown',
+                'discord-mention': 'VDiscordMention',
+                'discord-reaction': 'VDiscordReaction',
+                'discord-reactions': 'VDiscordReactions',
+                'discord-embed': 'VDiscordEmbed',
+                'discord-embed-fields': 'VDiscordEmbedFields',
+                'discord-embed-field': 'VDiscordEmbedField',
             }
         }
     },
