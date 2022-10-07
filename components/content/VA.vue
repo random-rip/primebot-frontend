@@ -1,7 +1,9 @@
 <template>
-  <n-a><slot></slot></n-a>
+  <n-a v-bind="$props"><slot></slot></n-a>
 </template>
 
 <script setup>
-import {NA} from 'naive-ui'
+import {NA, aProps} from 'naive-ui'
+
+defineProps(aProps)
 </script>
