@@ -1,3 +1,5 @@
 <template>
-  <ContentDoc path="/open-source"></ContentDoc>
+  <main>
+    <ContentDoc path="/open-source"></ContentDoc>
+  </main>
 </template>

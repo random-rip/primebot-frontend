@@ -1,4 +1,5 @@
 <template>
+  <main>
   <n-h1>Status</n-h1>
   <n-space vertical>
     <n-card>
@@ -11,6 +12,7 @@
       <n-result :status="status.prime_league_status ? 'success' : 'error'" title="Primeleague API"></n-result>
     </n-card>
   </n-space>
+  </main>
 </template>
 
 <script setup lang="ts">

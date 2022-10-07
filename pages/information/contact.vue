@@ -1,7 +1,8 @@
 <template>
+  <main>
   <n-h1>Kontakt</n-h1>
   <n-h2>Socials</n-h2>
-  <a href="https://discord.gg/7NYgT2uFPm"><n-button type="info">Discord</n-button></a>
+  <n-a href="https://discord.gg/7NYgT2uFPm"><n-button type="info">Discord</n-button></n-a>
   <n-h2>Core Crew</n-h2>
   <n-grid cols="1 600:3" x-gap="10" y-gap="10">
     <n-grid-item v-for="member in crewMembers">
@@ -14,12 +15,17 @@
     </n-grid-item>
   </n-grid>
   <n-h2>Contributors</n-h2>
-  <n-a href="https://github.com/random-rip/primebot-frontend/graphs/contributors">hier</n-a>
-
+  <n-space vertical size="small">
+    <n-a href="https://github.com/random-rip/primebot_backend/graphs/contributors">
+      <n-image preview-disabled src="https://contrib.rocks/image?repo=random-rip/primebot_backend" />
+    </n-a>
+    <n-p> Made with <n-a href="https://contrib.rocks">contrib.rocks</n-a></n-p>
+  </n-space>
+  </main>
 </template>
 
 <script setup lang="ts">
-import {NH1, NH2, NGrid, NGridItem, NCard, NButton, NA} from 'naive-ui'
+import {NH1, NH2, NGrid, NGridItem, NCard, NButton, NA, NSpace, NImage, NP} from 'naive-ui'
 import {ref} from "#imports";
 
 interface SocialLink {
