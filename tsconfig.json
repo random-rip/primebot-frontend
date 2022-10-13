@@ -6,7 +6,7 @@
     "types": [
       "node",
       "vite/client",
-      "nuxt/types"
+      "@nuxt/types",
     ]
-  },
+  }
 }
