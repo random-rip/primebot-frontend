@@ -10,8 +10,9 @@
                     fill-rule="evenodd"></path>
             </svg>
           </n-icon>
-          <n-h1 :style="{fontSize: largerThanSm ? '6rem': '4rem'}">PrimeBot</n-h1>
+          <n-h1 class="title">PrimeBot</n-h1>
           <n-space>
+            <nuxt-link to="get-started/discord">
             <n-button color="#7289da" size="large">
               <n-icon size="30" color="white">
                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="h-8">
@@ -25,16 +26,19 @@
               </n-icon>
               <n-text style="color: white" strong>Get Started</n-text>
             </n-button>
-            <n-button color="#2AABEE" size="large">
-              <n-icon size="25" color="white">
-                <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" class="h-8 my-auto">
-                  <path xmlns="http://www.w3.org/2000/svg"
-                        d="M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7l-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1l114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4l-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
-                        fill="currentColor"></path>
-                </svg>
-              </n-icon>
-              <n-text style="color: white" strong>Get Started</n-text>
-            </n-button>
+            </nuxt-link>
+            <nuxt-link to="get-started/telegram">
+              <n-button color="#2AABEE" size="large">
+                <n-icon size="25" color="white">
+                  <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" class="h-8 my-auto">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                          d="M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7l-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1l114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4l-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
+                          fill="currentColor"></path>
+                  </svg>
+                </n-icon>
+                <n-text style="color: white" strong>Get Started</n-text>
+              </n-button>
+            </nuxt-link>
           </n-space>
           <n-button size="small" @click="scrollDown">Überblick</n-button>
         </n-space>
@@ -49,18 +53,18 @@
 
         <ContentQuery :path="`home/overview/features/descriptions`" v-slot="{ data }">
           <article>
-              <div class="feature-list" v-for="(feature, index) in data">
-                <div>
-                  <v-discord-messages v-if="feature.messages?.length">
-                    <v-discord-message v-for="message in feature?.messages" v-bind="getMessage(message)">
-                      <ContentRenderer :value="getMessage(message)" :components="{p:'p'}"></ContentRenderer>
-                    </v-discord-message>
-                  </v-discord-messages>
-                </div>
-                <div>
-                  <ContentRenderer :value="feature" />
-                </div>
+            <div class="feature-list" v-for="(feature, index) in data">
+              <div>
+                <v-discord-messages v-if="feature.messages?.length">
+                  <v-discord-message v-for="message in feature?.messages" v-bind="getMessage(message)">
+                    <ContentRenderer :value="getMessage(message)" :components="{p:'p'}"></ContentRenderer>
+                  </v-discord-message>
+                </v-discord-messages>
               </div>
+              <div>
+                <ContentRenderer :value="feature"/>
+              </div>
+            </div>
           </article>
         </ContentQuery>
       </section>
@@ -96,7 +100,16 @@ const getMessage = (path) => {
 </script>
 
 <style>
-@media (min-width: 768px){
+
+a {
+  text-decoration: none
+}
+
+.title {
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
   .feature-list {
     display: flex;
     flex-direction: row-reverse;
@@ -105,13 +118,16 @@ const getMessage = (path) => {
   /*.feature-list:nth-child(even){*/
   /*  flex-direction: row-reverse;*/
   /*}*/
-
-  .feature-list:nth-child(odd){
+  .feature-list:nth-child(odd) {
     flex-direction: row;
   }
 
-  .feature-list>div {
+  .feature-list > div {
     flex: 1
+  }
+
+  .title {
+    font-size: 6rem;
   }
 }
 </style>
