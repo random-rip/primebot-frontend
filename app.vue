@@ -4,7 +4,7 @@
       <n-notification-provider>
         <n-loading-bar-provider>
           <n-dialog-provider>
-            <n-layout style="height: 100vh">
+            <n-layout style="height: 100%; height: -webkit-fill-available">
               <n-layout-header bordered
                                style="height: 64px; padding-left: 24px; padding-right: 24px; position: fixed">
                 <n-space justify="space-between" align="center" style="height: 100%">
@@ -24,69 +24,13 @@
                         <svg viewBox="0 -20 305 305">
                           <title id="title3842">Hamburger (Menu) Icon</title>
                           <defs id="defs4"/>
-                          <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.54" inkscape:cx="358.20459" inkscape:cy="473.54108" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" showborder="true" inkscape:showpageshadow="false" fit-margin-top="5" fit-margin-right="5" fit-margin-bottom="5" fit-margin-left="5" inkscape:window-width="1378" inkscape:window-height="882" inkscape:window-x="208" inkscape:window-y="58" inkscape:window-maximized="0"/>
                           <metadata id="metadata7">
-                            <rdf:RDF>
-                              <cc:Work rdf:about="">
-                                <dc:format>image/svg+xml</dc:format>
-                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                                <dc:title>Hamburger (Menu) Icon</dc:title>
-                                <dc:date>2015-06-29</dc:date>
-                                <dc:creator>
-                                  <cc:Agent>
-                                    <dc:title>Daniel Fowler</dc:title>
-                                  </cc:Agent>
-                                </dc:creator>
-                                <dc:rights>
-                                  <cc:Agent>
-                                    <dc:title>Public Domain</dc:title>
-                                  </cc:Agent>
-                                </dc:rights>
-                                <dc:publisher>
-                                  <cc:Agent>
-                                    <dc:title>openclipart.org</dc:title>
-                                  </cc:Agent>
-                                </dc:publisher>
-                                <dc:language>en-GB</dc:language>
-                                <dc:subject>
-                                  <rdf:Bag>
-                                    <rdf:li>icon</rdf:li>
-                                    <rdf:li>menu</rdf:li>
-                                    <rdf:li>hamburger</rdf:li>
-                                    <rdf:li>basic</rdf:li>
-                                    <rdf:li>simple</rdf:li>
-                                    <rdf:li>black</rdf:li>
-                                    <rdf:li>white</rdf:li>
-                                    <rdf:li>lines</rdf:li>
-                                    <rdf:li>rounded</rdf:li>
-                                    <rdf:li>open</rdf:li>
-                                    <rdf:li>close</rdf:li>
-                                    <rdf:li>norm</rdf:li>
-                                    <rdf:li>cox</rdf:li>
-                                    <rdf:li>star</rdf:li>
-                                    <rdf:li>xerox</rdf:li>
-                                  </rdf:Bag>
-                                </dc:subject>
-                                <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
-                                <dc:description>A simple and basic hamburger (menu) icon. It originates from Xerox "Star" workstations of the 1980's but is now popular to hide/show menus on mobile devices.</dc:description>
-                                <dc:contributor>
-                                  <cc:Agent>
-                                    <dc:title>Norm Cox</dc:title>
-                                  </cc:Agent>
-                                </dc:contributor>
-                              </cc:Work>
-                              <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
-                                <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-                                <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
-                                <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
-                              </cc:License>
-                            </rdf:RDF>
                           </metadata>
-                          <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(10.015625,-803.03125)">
+                          <g id="layer1" transform="translate(10.015625,-803.03125)">
                             <g id="g3837">
-                              <path inkscape:connector-curvature="0" id="path3785-0" d="m 19.668179,1032.694 250.646101,0 0,0" style="fill:none;stroke:#000000;stroke-width:49.33635712;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
-                              <path inkscape:connector-curvature="0" id="path3785-0-9" d="m 19.668179,932.694 250.646101,0 0,0" style="fill:none;stroke:#000000;stroke-width:49.33635712;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
-                              <path inkscape:connector-curvature="0" id="path3785-0-4" d="m 19.668179,832.694 250.646101,0 0,0" style="fill:none;stroke:#000000;stroke-width:49.33635712;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
+                              <path id="path3785-0" d="m 19.668179,1032.694 250.646101,0 0,0" style="fill:none;stroke:#000000;stroke-width:49.33635712;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
+                              <path id="path3785-0-9" d="m 19.668179,932.694 250.646101,0 0,0" style="fill:none;stroke:#000000;stroke-width:49.33635712;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
+                              <path id="path3785-0-4" d="m 19.668179,832.694 250.646101,0 0,0" style="fill:none;stroke:#000000;stroke-width:49.33635712;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
                             </g>
                           </g>
                         </svg>
@@ -95,16 +39,16 @@
                   </n-space>
                 </n-space>
               </n-layout-header>
-              <n-layout position="absolute" style="top: 64px" :native-scrollbar="false">
-                <n-layout-content content-style="padding: 24px" class="min-h-[calc(100vh-128px)] max-w-5xl mx-auto">
-                  <NuxtPage/>
-                </n-layout-content>
-                <n-layout-footer
-                    style="height: 64px; padding: 24px"
-                    bordered
-                >
-                  <v-footer></v-footer>
-                </n-layout-footer>
+              <n-layout position="absolute" style="top: 64px; overflow: hidden" :native-scrollbar="false">
+                  <n-layout-content content-style="padding: 24px; overflow: hidden" class="main-content">
+                    <NuxtPage/>
+                  </n-layout-content>
+                  <n-layout-footer
+                      style="height: 64px; padding: 24px"
+                      bordered
+                  >
+                    <v-footer></v-footer>
+                  </n-layout-footer>
               </n-layout>
             </n-layout>
           </n-dialog-provider>
@@ -267,6 +211,12 @@ const menuOptions: Array<MenuOption> = [
 .title{
   font-size: 2rem;
   font-weight: 500;
+}
+
+.main-content {
+  min-height: calc(100vh - 128px);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
