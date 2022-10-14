@@ -1,6 +1,7 @@
 ---
 title: Features
 ---
+
 |                                                          | Discord | Telegram |
 | -------------------------------------------------------- | ------- | -------- |
 | Benachrichtigungen bei neuen Terminvorschlägen           | ✅      | ✅       |

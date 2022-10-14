@@ -1,6 +1,7 @@
 ---
 title: Datenschutz
 ---
+
 ## Datenschutzerklärung des PrimeBots auf Discord und Telegram
 
 Der PrimeBot (im folgenden "Bot" genannt) speichert folgende Informationen:
