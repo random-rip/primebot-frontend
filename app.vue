@@ -214,6 +214,7 @@ const menuOptions: Array<MenuOption> = [
 }
 
 .main-content {
+  max-width: 80rem;
   min-height: calc(100vh - 128px);
   margin-right: auto;
   margin-left: auto;
