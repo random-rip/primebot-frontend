@@ -4,7 +4,7 @@
       <n-notification-provider>
         <n-loading-bar-provider>
           <n-dialog-provider>
-            <n-layout style="height: 100%; height: -webkit-fill-available">
+            <n-layout class="layout">
               <n-layout-header bordered
                                style="height: 64px; padding-left: 24px; padding-right: 24px; position: fixed">
                 <n-space justify="space-between" align="center" style="height: 100%">
@@ -219,6 +219,11 @@ const menuOptions: Array<MenuOption> = [
   margin-left: auto;
 }
 
+.layout {
+  height: 100%;
+  height: -webkit-fill-available;
+}
+
 
 @media (min-width: 768px){
   .menu-desktop {
@@ -227,6 +232,10 @@ const menuOptions: Array<MenuOption> = [
 
   .menu-mobile {
     display: none;
+  }
+
+  .layout {
+    height: 100vh;
   }
 }
 
