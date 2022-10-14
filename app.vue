@@ -220,7 +220,6 @@ const menuOptions: Array<MenuOption> = [
 }
 
 .layout {
-  height: 100%;
   height: -webkit-fill-available;
 }
 

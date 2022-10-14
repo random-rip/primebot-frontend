@@ -1,50 +1,52 @@
 <template>
   <main>
-    <n-space justify="center">
-      <n-image :src="settings?.logo_url" style="border-radius: 99999px"></n-image>
-    </n-space>
-    <n-space justify="space-between" align="center">
-      <n-h1>{{ settings?.team_name }} Einstellungen</n-h1>
-      <n-text strong>Läuft ab in:
+    <n-spin :show="pending">
+      <n-space justify="center">
+        <n-image :src="settings?.logo_url" style="border-radius: 99999px"></n-image>
+      </n-space>
+      <n-space justify="space-between" align="center">
+        <n-h1>{{ settings?.team_name }} Einstellungen</n-h1>
+        <n-text strong>Läuft ab in:
+          <client-only>
+            <n-countdown :duration="(new Date(settings?.expiring_at).getTime()- new Date().getTime())"></n-countdown>
+          </client-only>
+        </n-text>
+      </n-space>
+      <n-form label-placement="top" label-width="auto">
+        <n-form-item label="Wöchentliche Benachrichtigung">
+          <n-switch v-model:value="weeklyNotification"></n-switch>
+        </n-form-item>
+        <n-form-item label="Benachrichtigung bei Lineup Änderungen">
+          <n-switch v-model:value="lineupNotification"></n-switch>
+        </n-form-item>
+        <n-form-item label="Benachrichtigung bei Terminvorschlägen von euch">
+          <n-switch v-model:value="teamSchedulingSuggestion"></n-switch>
+        </n-form-item>
+        <n-form-item label="Benachrichtigung bei Terminvorschlägen vom Gegner">
+          <n-switch v-model:value="enemySchedulingSuggestion"></n-switch>
+        </n-form-item>
+        <n-form-item label="Benachrichtigung bei Terminbestätigungen">
+          <n-switch v-model:value="schedulingConfirmation"></n-switch>
+        </n-form-item>
+        <n-form-item label="Benachrichtigung bei neuen Kommentaren (außer Teammitgliedern)">
+          <n-switch v-model:value="newComments"></n-switch>
+        </n-form-item>
+        <n-form-item label="Scoutingseite">
+          <n-select v-model:value="scouting" :options="scoutingOptions"></n-select>
+        </n-form-item>
+        <n-form-item label="Sprache">
+          <n-select v-model:value="language" :options="languageOptions"></n-select>
+        </n-form-item>
         <client-only>
-          <n-countdown :duration="(new Date(settings?.expiring_at).getTime()- new Date().getTime())"></n-countdown>
+          <n-button @click="submitSettings">Speichern</n-button>
         </client-only>
-      </n-text>
-    </n-space>
-    <n-form label-placement="top" label-width="auto">
-      <n-form-item label="Wöchentliche Benachrichtigung">
-        <n-switch v-model:value="weeklyNotification"></n-switch>
-      </n-form-item>
-      <n-form-item label="Benachrichtigung bei Lineup Änderungen">
-        <n-switch v-model:value="lineupNotification"></n-switch>
-      </n-form-item>
-      <n-form-item label="Benachrichtigung bei Terminvorschlägen von euch">
-        <n-switch v-model:value="teamSchedulingSuggestion"></n-switch>
-      </n-form-item>
-      <n-form-item label="Benachrichtigung bei Terminvorschlägen vom Gegner">
-        <n-switch v-model:value="enemySchedulingSuggestion"></n-switch>
-      </n-form-item>
-      <n-form-item label="Benachrichtigung bei Terminbestätigungen">
-        <n-switch v-model:value="schedulingConfirmation"></n-switch>
-      </n-form-item>
-      <n-form-item label="Benachrichtigung bei neuen Kommentaren (außer Teammitgliedern)">
-        <n-switch v-model:value="newComments"></n-switch>
-      </n-form-item>
-      <n-form-item label="Scoutingseite">
-        <n-select v-model:value="scouting" :options="scoutingOptions"></n-select>
-      </n-form-item>
-      <n-form-item label="Sprache">
-        <n-select v-model:value="language" :options="languageOptions"></n-select>
-      </n-form-item>
-      <client-only>
-        <n-button @click="submitSettings">Speichern</n-button>
-      </client-only>
-    </n-form>
+      </n-form>
+    </n-spin>
   </main>
 </template>
 
 <script setup>
-import {NH1, NCountdown, NSpace, NText, NImage, NForm, NFormItem, NSwitch, NSelect, NButton, useMessage} from 'naive-ui'
+import {NH1, NCountdown, NSpace, NText, NImage, NForm, NFormItem, NSwitch, NSelect, NButton, useMessage, NSpin} from 'naive-ui'
 import {useRoute} from "#app";
 import {computed, ref} from "#imports";
 import {useFetch} from "#app";
@@ -54,7 +56,7 @@ const route = useRoute()
 const {
   pending,
   data: settings,
-} = useLazyFetch(`https://www.primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`)
+} = useFetch(()=>`https://www.primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {server: false})
 
 const scouting = computed({
   get() {
