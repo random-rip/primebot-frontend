@@ -1,3 +1,7 @@
+---
+title: PrimeBot
+---
+
 ## Der einfache Weg euer Prime League Team zu organisieren.
 
 Der PrimeBot ist ein Discord- und Telegrambot, der dich und dein Team bei der Organisation von Spielen der Gruppenphase

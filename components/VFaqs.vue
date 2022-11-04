@@ -1,6 +1,6 @@
 <template>
   <NCollapse display-directive="show">
-      <NCollapseItem :title="faq.title" :name="faq._path" v-for="faq in data">
+      <NCollapseItem :title="faq.contentTitle" :name="faq._path" v-for="faq in data">
         <ContentRenderer :value="faq"></ContentRenderer>
       </NCollapseItem>
   </NCollapse>

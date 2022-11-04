@@ -15,7 +15,7 @@
             <nuxt-link to="get-started/discord">
             <n-button color="#7289da" size="large">
               <n-icon size="30" color="white">
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="h-8">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path xmlns="http://www.w3.org/2000/svg"
                         d="M13.647 14.907a1.448 1.448 0 1 0 1.326 1.443a1.385 1.385 0 0 0-1.326-1.443zm4.745 0a1.448 1.448 0 1 0 1.326 1.443a1.385 1.385 0 0 0-1.326-1.443z"
                         fill="currentColor"></path>
@@ -29,8 +29,8 @@
             </nuxt-link>
             <nuxt-link to="get-started/telegram">
               <n-button color="#2AABEE" size="large">
-                <n-icon size="25" color="white">
-                  <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" class="h-8 my-auto">
+                <n-icon size="25" color="white" style="margin-right: 0.3rem">
+                  <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
                     <path xmlns="http://www.w3.org/2000/svg"
                           d="M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7l-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1l114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4l-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
                           fill="currentColor"></path>
@@ -46,9 +46,9 @@
       <article ref="about" style="text-align: center">
         <ContentDoc path="/home/short-description"/>
       </article>
-      <section>
+      <section style="display: flex; flex-direction: column; gap: 5rem">
         <ContentQuery path="/home/overview/meta" v-slot="{data}" find="one">
-          <n-h2 style="text-align: center">{{ data.title }}</n-h2>
+          <n-h2 style="text-align: center">{{ data.contentTitle }}</n-h2>
         </ContentQuery>
 
         <ContentQuery :path="`home/overview/features/descriptions`" v-slot="{ data }">
@@ -60,7 +60,7 @@
                   </v-discord-message>
                 </v-discord-messages>
               </div>
-              <div style="text-align: center">
+              <div style="text-align: center; display: flex; flex-direction: column; justify-content: center">
                 <ContentRenderer :value="feature"/>
               </div>
           </article>

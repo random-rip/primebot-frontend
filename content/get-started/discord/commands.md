@@ -1,5 +1,6 @@
 ---
-title: Befehle
+title: PrimeBot
+contentTitle: Befehle
 description: Hier findest du eine Übersicht aller Befehle, die in Telegram verfügbar sind
 ---
 

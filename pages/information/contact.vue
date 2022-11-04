@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 import {NH1, NH2, NGrid, NGridItem, NCard, NButton, NA, NSpace, NImage, NP} from 'naive-ui'
-import {ref} from "#imports";
+import {ref, useMeta} from "#imports";
 
 interface SocialLink {
   type: string,
@@ -69,4 +69,7 @@ const crewMembers = ref<Array<CrewMember>>([
     role: "Designer",
   }
 ])
+
+useMeta({title: 'Kontakt'})
+
 </script>

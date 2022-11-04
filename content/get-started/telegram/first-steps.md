@@ -1,5 +1,6 @@
 ---
-title: Erste Schritte
+title: PrimeBot
+contentTitle: Erste Schritte
 ---
 
 1. Erstelle eine Telegram-Gruppe und füge den Bot `PrimeLeague Bot` hinzu (oder

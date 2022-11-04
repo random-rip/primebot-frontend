@@ -13,4 +13,7 @@
 
 <script setup lang="ts">
 import {NH1, NSpace} from 'naive-ui'
+import {useMeta} from "#imports";
+
+useMeta({title: 'Changelog'})
 </script>

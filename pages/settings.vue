@@ -1,6 +1,6 @@
 <template>
   <main>
-    <n-spin :show="pending">
+    <n-spin :show="pending" v-if="!error">
       <n-space justify="center">
         <n-image :src="settings?.logo_url" style="border-radius: 99999px"></n-image>
       </n-space>
@@ -42,21 +42,43 @@
         </client-only>
       </n-form>
     </n-spin>
+    <section v-else>
+      Link ungültig ({{JSON.stringify(error)}})
+    </section>
   </main>
 </template>
 
 <script setup>
-import {NH1, NCountdown, NSpace, NText, NImage, NForm, NFormItem, NSwitch, NSelect, NButton, useMessage, NSpin} from 'naive-ui'
+import {
+  NH1,
+  NCountdown,
+  NSpace,
+  NText,
+  NImage,
+  NForm,
+  NFormItem,
+  NSwitch,
+  NSelect,
+  NButton,
+  useMessage,
+  NSpin
+} from 'naive-ui'
 import {useRoute} from "#app";
-import {computed, ref} from "#imports";
+import {computed, ref, useMeta} from "#imports";
 import {useFetch} from "#app";
 
 const route = useRoute()
 
+const error = ref()
+
 const {
   pending,
   data: settings,
-} = useFetch(()=>`https://www.primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {server: false})
+} = useFetch(() => `https://www.primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {
+  server: false, onResponseError: ({response}) => {
+    error.value = response._data
+  }
+})
 
 const scouting = computed({
   get() {
@@ -115,7 +137,7 @@ const message = useMessage()
 const submitting = ref(false)
 
 const submitSettings = async () => {
-  if(!submitting.value){
+  if (!submitting.value) {
     const {data, pending, error} = await useFetch('https://www.primebot.me/api/settings/', {
       method: 'POST', body: {
         ...settings.value,
@@ -209,4 +231,6 @@ const newComments = computed({
   }
 })
 
+
+useMeta({title: 'Einstellungen'})
 </script>

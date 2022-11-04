@@ -1,5 +1,6 @@
 ---
 title: Impressum
+contentTitle: Impressum
 ---
 
 ## Impressum

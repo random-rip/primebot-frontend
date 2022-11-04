@@ -23,8 +23,10 @@
 
 <script setup lang="ts">
 import {NH1, NSpace, NCard, NText} from 'naive-ui'
-import {useLazyFetch} from "#imports";
+import {useLazyFetch, useMeta} from "#imports";
 
 
 const { pending, data: status } = useLazyFetch('https://www.primebot.me/api/status/')
+
+useMeta({title: 'Status'})
 </script>

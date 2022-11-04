@@ -12,6 +12,7 @@ import {NSpace, NText} from 'naive-ui'
 const links = [
   {text: 'Impressum', to: '/imprint'},
   {text: 'Kontakt', to: '/information/contact'},
-  {text: 'Nutzungsbedingungen', to: '/privacy'},
+  {text: 'Datenschutz', to: '/privacy'},
+  {text: 'Nutzungsbedingungen', to: '/tos'},
 ]
 </script>

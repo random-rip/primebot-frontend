@@ -1,4 +1,5 @@
 ---
+contentTitle: Datenschutz
 title: Datenschutz
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Features
+title: PrimeBot
+contentTitle: Features
 ---
 
 |                                                          | Discord | Telegram |

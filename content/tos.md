@@ -1,5 +1,6 @@
 ---
-title: "Nutzungsbedingungen"
+contentTitle: Nutzungsbedingungen
+title: Nutzungsbedingungen
 ---
 
 ## Nutzungsbedingungen

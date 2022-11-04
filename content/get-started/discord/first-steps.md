@@ -1,5 +1,6 @@
 ---
-title: Erste Schritte
+title: PrimeBot
+contentTitle: Erste Schritte
 ---
 
 1. Stelle sicher, dass du die entsprechenden Rechte hast, einen Bot zum Server hinzuzufügen.
