@@ -221,11 +221,18 @@ const menuOptions: Array<MenuOption> = [
 }
 
 .layout {
-  height: -webkit-fill-available;
+  min-height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .layout {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
 }
 
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
   .menu-desktop {
     display: flex;
   }

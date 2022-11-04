@@ -107,7 +107,8 @@ a {
   font-size: 4rem;
 }
 
-@media (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
   .feature-list {
     display: flex;
     flex-direction: row-reverse;
