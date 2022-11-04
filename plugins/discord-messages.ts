@@ -7,11 +7,19 @@ import { install as DiscordMessageComponents } from '@discord-message-components
 export default defineNuxtPlugin((nuxtApp) => {
    nuxtApp.vueApp.use(DiscordMessageComponents, {
       profiles: {
-         grayknife: {
-            author: 'Grayknife',
-            avatar: 'https://i.imgur.com/0TeacfY.png',
+         kira: {
+            author: 'Kira',
+            avatar: '/kira.png',
             roleColor: '#0099ff',
          },
+         primebot: {
+            author: 'PrimeBot',
+            avatar: '/prime_bot_avatar.jpg',
+            roleColor: '#0099ff',
+         },
+         pinguine: {
+            author: "Pinguine"
+         }
       },
    })
 });
