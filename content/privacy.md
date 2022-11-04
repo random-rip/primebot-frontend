@@ -12,8 +12,7 @@ Der PrimeBot (im folgenden "Bot" genannt) speichert folgende Informationen:
 - Team-Informationen, wie beispielsweise der Name oder die Personalisierung der Benachrichtigungen. Die
   Datenschutzbestimmungen der PrimeLeague findest du [hier](https://docs.gamesports.net/privacy/de).
 
-Wenn zu irgendeinem Zeitpunkt diese Daten gelöscht werden sollen, kann der Befehl `!delete` (Discord) in
-Discordchannel oder `/delete` (Telegram) in der Telegramgruppe ausgeführt werden.
+Wenn zu irgendeinem Zeitpunkt diese Daten gelöscht werden sollen, kann der Befehl `/delete` ausgeführt werden.
 
 ## Datenschutzerklärung der PrimeBot Website
 

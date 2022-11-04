@@ -12,7 +12,7 @@ Und das auch, wenn das Gegnerteam ihr Lineup noch einmal ändert.
 
 Passend dazu gibt es direkt einen [op.gg Link](https://euw.op.gg/multi/query=)
 oder [u.gg Link](https://u.gg/multisearch?summoners=)
-mit **allen Spielern**, die aufgestellt wurden.
+mit **allen Spieler:innen**, die aufgestellt wurden.
 
 _*Innerhalb eines Zeitraums von 15 Minuten_
 

@@ -20,6 +20,6 @@ Außerdem könnt ihr dort auch eine andere Scouting-Website hinterlegen. Dabei h
 und [xdx.gg](https://xdx.gg/lol/multi/euw/).
 
 In Discord habt ihr außerdem die Möglichkeit, eine **Rolle anzugeben, die bei Benachrichtigungen erwähnt** werden soll.
-Gebt dazu einfach `!role` und dahinter die Rolle ein.
+Gebt dazu einfach `/role` und dahinter die Rolle ein.
 
 [comment]: <> (**"Feier ich!"**, meint _iTz Softeis_.)

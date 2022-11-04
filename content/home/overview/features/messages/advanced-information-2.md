@@ -26,7 +26,7 @@ profile: primebot
 
 </discord-embed-field>
 
-<discord-embed-field field-title="Gegnerische Spieler (leagueofgraphs.com)">
+<discord-embed-field field-title="Gegnerische Spieler:innen (leagueofgraphs.com)">
 
 1️⃣ 🔍 [Ke1neahnung]() <br>
 2️⃣ 🔍 [Cobaat]() <br>
