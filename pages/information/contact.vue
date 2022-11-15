@@ -46,12 +46,12 @@ interface CrewMember {
 const crewMembers = ref<Array<CrewMember>>([
   {
     name: "Janek",
-    role: 'Lead-Developer',
+    role: 'Lead-Developer[0]',
     image: '/janek.png',
   },
   {
     name: 'Robin',
-    role: 'Developer',
+    role: 'Developer[1]',
     image: '/robin.png'
   },
   {
