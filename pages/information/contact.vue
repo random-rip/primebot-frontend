@@ -51,17 +51,17 @@ const crewMembers = ref<Array<CrewMember>>([
   },
   {
     name: 'Robin',
-    role: 'Developer[1]',
+    role: 'Lead-Developer[1]',
     image: '/robin.png'
   },
   {
     name: "Kira",
-    role: 'Dogitalisierungsbeauftrage',
+    role: 'Dogitalisierungsbeauftragte',
     image: '/kira.png',
   },
   {
     name: "Merlin",
-    role: "Merlin",
+    role: "Wizard developer",
     image: '/merlin.png',
   },
   {
