@@ -148,12 +148,11 @@ const menuOptions: Array<MenuOption> = [
             h(
                 NuxtLink,
                 {
-                  // to: '/information/teams'
+                  to: '/information/partner'
                 },
-                { default: () => 'Infos' }
+                { default: () => 'Partner' }
             ),
-        disabled: true,
-        key: 'teams',
+        key: 'partner',
         // icon: renderIcon(TeamIcon)
       },
       {
