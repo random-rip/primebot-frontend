@@ -1,7 +1,9 @@
 ---
 title: Open Source
 ---
-## Contribution
+## Open Source
 
-### Backend: [Github](https://github.com/random-rip/primebot_backend)
+Backend: [Github Repository](https://github.com/random-rip/primebot_backend)
+
+Frontend: [Github Repository](https://github.com/random-rip/primebot-frontend)
 
