@@ -11,7 +11,20 @@
             </svg>
           </n-icon>
           <n-h1 class="title">PrimeBot</n-h1>
-          <n-space>
+          <div v-if="status" justify="center" align="center">
+            <div style="margin-bottom: 10px;">
+              <n-text strong type="red" style="font-size: large;" >
+                <n-number-animation
+                    ref="numberAnimationInstRef"
+                    :from="0"
+                    :to="status.registered_teams"
+                    :active="status"
+                    :duration="3000"
+                /> Teams benutzen bereits den PrimeBot (. ❛ ᴗ ❛.)
+              </n-text>
+            </div>
+          </div>
+          <n-space  justify="center" align="center">
             <nuxt-link to="get-started/discord">
             <n-button color="#7289da" size="large">
               <n-icon size="30" color="white">
@@ -71,24 +84,23 @@
 </template>
 
 <script setup>
-import {NH1, NH2, NIcon, NSpace, NText, NButton} from 'naive-ui'
+import {NButton, NH1, NH2, NIcon, NNumberAnimation, NSpace, NText} from 'naive-ui'
 import {queryContent, ref} from "#imports";
+import {breakpointsTailwind, useBreakpoints} from '@vueuse/core'
 
 const about = ref()
 
 const scrollDown = () => about.value?.scrollIntoView({behavior: "smooth"})
 
-import {useBreakpoints, breakpointsTailwind} from '@vueuse/core'
-
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
 const largerThanSm = breakpoints.greater('sm')
-// const largerThanMd = breakpoints.greater('md')
 
 
 const {data: messages} = await useAsyncData('messages', () => queryContent('/home/overview/features/messages').find())
 const {data: featuresMeta} = await useAsyncData('featuresMeta', () => queryContent('home/overview/meta').findOne())
 
+const { pending, data: status } = useLazyFetch('https://www.primebot.me/api/status/')
 
 const getMessage = (path) => {
   return messages.value.find((m) => {
