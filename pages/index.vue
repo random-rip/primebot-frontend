@@ -87,6 +87,7 @@
 import {NButton, NH1, NH2, NIcon, NNumberAnimation, NSpace, NText} from 'naive-ui'
 import {queryContent, ref} from "#imports";
 import {breakpointsTailwind, useBreakpoints} from '@vueuse/core'
+import {useFetch} from "#app";
 
 const about = ref()
 
@@ -100,7 +101,8 @@ const largerThanSm = breakpoints.greater('sm')
 const {data: messages} = await useAsyncData('messages', () => queryContent('/home/overview/features/messages').find())
 const {data: featuresMeta} = await useAsyncData('featuresMeta', () => queryContent('home/overview/meta').findOne())
 
-const { pending, data: status } = useLazyFetch('https://www.primebot.me/api/status/')
+const { pending, data: status } = useFetch(() => 'https://www.primebot.me/api/status/', {
+  server: false, })
 
 const getMessage = (path) => {
   return messages.value.find((m) => {
