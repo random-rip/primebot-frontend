@@ -10,7 +10,7 @@ Der PrimeBot (im folgenden "Bot" genannt) speichert folgende Informationen:
 - Registrierte Teams auf Telegram: Telegramgruppen ID
 - Registrierte Teams auf Discord: Server ID, Channel ID, Webhook ID, Webhook Token, Discordrolle
 - Team-Informationen, wie beispielsweise der Name oder die Personalisierung der Benachrichtigungen. Die
-  Datenschutzbestimmungen der PrimeLeague findest du [hier](https://docs.gamesports.net/privacy/de).
+  Datenschutzbestimmungen der Prime League findest du [hier](https://docs.gamesports.net/privacy/de).
 
 Wenn zu irgendeinem Zeitpunkt diese Daten gelöscht werden sollen, kann der Befehl `/delete` ausgeführt werden.
 

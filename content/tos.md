@@ -5,7 +5,7 @@ title: Nutzungsbedingungen
 
 ## Nutzungsbedingungen
 
-Der PrimeBot (im folgenden als "Bot" bezeichnet) ist als Unterstützung für Teams und Spieler:innen der PrimeLeague
+Der PrimeBot (im folgenden als "Bot" bezeichnet) ist als Unterstützung für Teams und Spieler:innen der Prime League
 gedacht.
 
 Mit der Benutzung des Bots erklärst du dich wie nachfolgend einverstanden:
@@ -14,7 +14,7 @@ Mit der Benutzung des Bots erklärst du dich wie nachfolgend einverstanden:
    zeitlich räumlich unbefristetes einfaches nicht exklusives Nutzungsrecht.
 2. Das Angebot des Bots richtet sich an Verbraucher.
 3. Der Bot darf nicht kommerziell weiterverwendet werden.
-4. Mit der Benutzung des Bots stimmst du den [Nutzungsbedingungen der PrimeLeague](https://docs.gamesports.net/tos/de)
+4. Mit der Benutzung des Bots stimmst du den [Nutzungsbedingungen der Prime League](https://docs.gamesports.net/tos/de)
    zu.
 5. Mit der Benutzung des Bots auf Discord stimmst du
    den [Nutzungsbedingungen von Discord](https://discord.com/developers/docs/legal) zu.
@@ -26,7 +26,7 @@ Mit der Benutzung des Bots erklärst du dich wie nachfolgend einverstanden:
    nicht gewährleistet werden. Es kann daher vorkommen, dass es aufgrund von internen Wartungen, Wartungen externer
    genutzten APIs oder höherer Gewalt zu Unterbrechungen der Verfügbarkeit kommt.
 9. Der Bot wurde nach bestem Gewissen realisiert, trotzdem übernehmen wir keine Haftung bei Fehlfunktionen.
-10. Wir übernehmen keine Haftung für Inhalte Dritter, insbesondere der Daten der PrimeLeague und Bildern der
+10. Wir übernehmen keine Haftung für Inhalte Dritter, insbesondere der Daten der Strauss Prime League und Bildern der
     [Dog-API](https://random.dog/) und [Cat-API](https://cataas.com/c/gif).
 
 ## Schlussbestimmungen

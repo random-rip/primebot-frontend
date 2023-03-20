@@ -11,8 +11,7 @@ messages:
 Lasst euch auf Wunsch sehr ausführliche Informationen zu Matches anzeigen. Folgende Rubriken gibt es:
 
 In der **Termin** Rubrik wird der aktuelle Terminstatus angezeigt, welche Termine ihr vorgeschlagen habt oder der Gegner
-vorgeschlagen hat.
-Gibt es noch keine Vorschläge, wird der Ausweichtermin angezeigt.
+vorgeschlagen hat. Außerdem wird angezeigt, wie viel Zeit noch bleibt, bevor ein Vorschlag automatisch akzeptiert wird.
 
 ___
 

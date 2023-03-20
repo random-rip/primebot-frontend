@@ -6,7 +6,7 @@ profile: primebot
 
 <discord-embed border-color="#f1c40f">
 
-Eine Übersicht eurer offenen Spiele:
+Eine Übersicht eurer Matches diese Woche:
 
 ⚔ Spieltag 3 <br>
 [vs. Die Potsdamer Postkutscher]() <br>

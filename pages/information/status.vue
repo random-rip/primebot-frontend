@@ -14,7 +14,7 @@
           </n-card>
           <n-card>
             <n-space justify="center">
-              PrimeLeague Api <n-text :type="status?.prime_league_status ? 'success' : 'error'" strong>{{status?.prime_league_status ? 'online' : 'offline'}}</n-text>
+              Prime League API <n-text :type="status?.prime_league_status ? 'success' : 'error'" strong>{{status?.prime_league_status ? 'online' : 'offline'}}</n-text>
             </n-space>
           </n-card>
         </n-space>

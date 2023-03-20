@@ -12,7 +12,7 @@ profile: primebot
 </discord-embed-field>
 <discord-embed-field field-title="Termin" :inline="false">
 
-📆 ✅ Offene Terminvorschläge von euch: <br>
+📆 ✅ Offene Terminvorschläge von euch. Verbleibende Zeit 18 Stunden 15 Minuten <br>
 ➕ 1️⃣ Donnerstag, 24. Feb. 2022 18:00Uhr <br>
 ➕ 2️⃣ Donnerstag, 24. Feb. 2022 20:00Uhr
 
