@@ -11,7 +11,7 @@ unserem [Discord-Server](https://discord.gg/K8bYxJMDzu).*
 
 **Hinweis: Nur Daten von registrierten Teams (die den PrimeBot benutzen) sind verfügbar.**
 
-## Allgemein
+## Features
 
 Alle Matches eures Teams könnt ihr in euren Kalender integrieren. Wenn ihr den Kalender abonniert, werden
 neue Matches automatisch hinzugefügt und Matches, die abgesagt oder verschoben wurden, automatisch aktualisiert.
@@ -36,14 +36,13 @@ In den Informationen eines Termins findet ihr folgende Informationen:
 Für die Kalender-Integration benötigt ihr die TEAM-ID eures Teams. Diese findet ihr in der URL eures Teams auf der
 Prime League Website. Die Team-ID ist die Zahl im letzten Teil der URL und besteht meistens aus 6-8 Ziffern.
 
-Eure Team-ID muss dann im folgenden Feed-Link ersetzt werden:
-[https://primebot.me/api/v1/teams/<TEAM-ID\>/feed]
+Eure Team-ID muss dann im folgenden Feed-Link ersetzt werden: https://primebot.me/api/v1/teams/TEAM-ID/feed
 
 #### Beispiel
 
-- Euer Team ist unter der Adresse [https://www.primeleague.gg/leagues/teams/105959-les-primebot-devs] 
+- Euer Team ist unter der Adresse https://www.primeleague.gg/leagues/teams/105959-les-primebot-devs
   erreichbar → "`105959`" ist die TEAM-ID.
-- Der Feed-Link für euer Team lautet dann: [https://primebot.me/api/v1/teams/105959/feed] ohne "<>"
+- Der Feed-Link für euer Team lautet dann: https://primebot.me/api/v1/teams/105959/feed
 
 ### Google Kalender
 
@@ -67,7 +66,6 @@ Eure Team-ID muss dann im folgenden Feed-Link ersetzt werden:
    auf "OK".
 
 *Quelle: https://support.apple.com/de-de/102301*
-
 
 ### Thunderbird Kalender
 
