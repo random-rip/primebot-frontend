@@ -1,15 +1,15 @@
 ---
-contentTitle: Inoffizielle Prime League API
-title: Inoffizielle Prime League API
+contentTitle: Unofficial Prime League API
+title: Unofficial Prime League API
 ---
 
-## Inoffizielle Prime League API
+# Unofficial Prime League API
 
-*Disclaimer: Nur Daten von registrierten Teams (die den PrimeBot benutzen) sind verfügbar.*
+**Hinweis: Nur Daten von registrierten Teams (die den PrimeBot benutzen) sind verfügbar.**
 
 Viele Organisationen möchten gerne ihre Teams und Spieler:innen auf ihrer eigenen Website präsentieren. Die Prime League
 bietet bis jetzt keine offizielle API an, um die Daten der Teams und Spieler:innen abzurufen. Deshalb haben wir eine
-inoffizielle API entwickelt. 
+Unofficial API entwickelt.
 
 Alle Endpunkte sind in der [Open API Swagger-Dokumentation](https://primebot.me/api/v1/) online einsehbar.
 
@@ -23,8 +23,16 @@ Unter anderem bietet die API folgende Informationen:
 
 Die API ist auf 1000 Anfragen pro Tag pro Benutzer begrenzt. Sollte dies nicht ausreichen, kontaktiere uns bitte.
 
+### Contributing
+
+Die API ist Open Source und wir freuen uns über Beiträge. Wenn du einen Fehler findest oder eine Verbesserung
+vorschlagen möchtest, erstelle bitte ein Issue oder ein Pull Request
+auf [GitHub](https://github.com/random-rip/primebot_backend).
+(❁´◡`❁)
+
 ### FAQ
 
-1. Warum ist die Division nicht in der API enthalten?
-   - Die Division ist nicht in der API enthalten, da die Prime League die Division vor knapp einem Jahr aus den
-     öffentlichen Daten entfernt hat. Die Division ist nur noch über die Prime League Website einsehbar.
+> Warum ist die Division nicht in der API enthalten?
+
+Die Prime League hat vor knapp einem Jahr die Division aus den uns zur Verfügung gestellten Daten entfernt. Die Division
+ist nur noch über die Prime League Website einsehbar.

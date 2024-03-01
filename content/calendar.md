@@ -1,15 +1,17 @@
 ---
-contentTitle: PRM Matches in deinem Kalender
+contentTitle: Kalender Integration
 title: Kalender Integration
 ---
 
-## Kalender Integration
+# Kalender Integration
 
-*Disclaimer: Die Integration befindet sich noch in der Beta-Phase und kann noch Fehler enthalten.
+*Disclaimer: Die Integration befindet sich noch in der Beta-Phase und kann Fehler enthalten.
 Lasst uns wissen, wenn ihr Fehler findet oder Verbesserungsvorschläge habt. Joint dazu einfach
 unserem [Discord-Server](https://discord.gg/K8bYxJMDzu).*
 
-**Disclaimer: Nur Daten von registrierten Teams (die den PrimeBot benutzen) sind verfügbar.**
+**Hinweis: Nur Daten von registrierten Teams (die den PrimeBot benutzen) sind verfügbar.**
+
+## Allgemein
 
 Alle Matches eures Teams könnt ihr in euren Kalender integrieren. Wenn ihr den Kalender abonniert, werden
 neue Matches automatisch hinzugefügt und Matches, die abgesagt oder verschoben wurden, automatisch aktualisiert.
@@ -22,69 +24,62 @@ In den Informationen eines Termins findet ihr folgende Informationen:
 - Den op.gg-Link eures Gegners
 - Den op.gg-Link des Lineups eures Gegners sofern verfügbar
 - Informationen, ob Terminvorschläge von euch oder den Gegnern offen sind oder ein Termin festgelegt worden ist.
-  - Das Emoji im Titel verrät euch, ob ein Termin bereits festgelegt worden ist:
-    - ⚔ Spieltermin festgelegt
-    - 📆 Keine Termine wurden vorgeschlagen
-    - ✅ Terminvorschläge von euch sind offen
-    - ⚠ Terminvorschläge eures Gegners sind offen!
+    - Das Emoji im Titel verrät euch, ob ein Termin bereits festgelegt worden ist:
+        - ⚔ Spieltermin festgelegt
+        - 📆 Keine Termine wurden vorgeschlagen
+        - ✅ Terminvorschläge von euch sind offen
+        - ⚠ Terminvorschläge eures Gegners sind offen!
 
 ## Kalender Abonnieren
 
+**Voraussetzung:**
+Für die Kalender-Integration benötigt ihr die TEAM-ID eures Teams. Diese findet ihr in der URL eures Teams auf der
+Prime League Website. Die Team-ID ist die Zahl im letzten Teil der URL und besteht meistens aus 6-8 Ziffern.
+
+Eure Team-ID muss dann im folgenden Feed-Link ersetzt werden:
+[https://primebot.me/api/v1/teams/<TEAM-ID\>/feed]
+
+#### Beispiel
+
+- Euer Team ist unter der Adresse [https://www.primeleague.gg/leagues/teams/105959-les-primebot-devs] 
+  erreichbar → "`105959`" ist die TEAM-ID.
+- Der Feed-Link für euer Team lautet dann: [https://primebot.me/api/v1/teams/105959/feed] ohne "<>"
+
 ### Google Kalender
 
-Ihr könnt die Prime League Matches in euren Google Kalender integrieren. Dazu müsst ihr nur eure TEAM-ID
-ermitteln und im Link ersetzen und den Link in euren Google Kalender importieren.
+1. Entweder über diesen Link (am Computer): https://calendar.google.com/calendar/u/0/r/settings/addbyurl
+2. Oder manuell:
+    1. Öffnet euren Google Kalender auf dem Computer
+    2. Klickt auf das "+"-Symbol neben "Weitere Kalender"
+    3. Wählt "Per URL" aus
+    4. Fügt euren Feed-Link ein und klickt auf "Kalender hinzufügen"
 
-1. Ermittelt eure TEAM-ID. Diese findet ihr in der URL eures Teams auf der Prime League Website.
-   Beispiel: `https://www.primeleague.gg/leagues/teams/105959-les-primebot-devs` → `105959` ist die TEAM-ID.
-2. Ersetzt `TEAM-ID` im folgenden Link durch eure TEAM-ID:
-   `https://primebot.de/api/v1/teams/<TEAM-ID>/feed` → `https://primebot.de/api/v1/teams/105959/feed`
-3. Fügt den Link in euren Google Kalender hinzu:
-    1. Einfach auf diesen Link am Computer klicken: https://calendar.google.com/calendar/u/0/r/settings/addbyurl
-    2. Oder manuell:
-       - Öffnet euren Google Kalender auf dem Computer
-       - Klickt auf das "+"-Symbol neben "Weitere Kalender"
-       - Wählt "Per URL" aus
-       - Fügt den Link ein und klickt auf "Kalender hinzufügen"
-4. Fertig!
-
-### Thunderbird Kalender
-
-Ihr könnt die Prime League Matches in euren Thunderbird Kalender integrieren. Dazu müsst ihr nur eure TEAM-ID
-ermitteln und im Link ersetzen und den Link in euren Thunderbird Kalender importieren.
-
-1. Ermittelt eure TEAM-ID. Diese findet ihr in der URL eures Teams auf der Prime League Website.
-   Beispiel: `https://www.primeleague.gg/leagues/teams/105959-les-primebot-devs` → `105959` ist die TEAM-ID.
-2. Ersetzt `TEAM-ID` im folgenden Link durch eure TEAM-ID:
-   `https://primebot.de/api/v1/teams/<TEAM-ID>/feed` → `https://primebot.de/api/v1/teams/105959/feed`
-3. Fügt den Link in euren Thunderbird Kalender hinzu:
-   - Öffnet euren Thunderbird Kalender
-   - Klickt auf das "+"-Symbol neben "Kalender"
-   - Wählt "Im Internet" aus
-   - Fügt den Link ein und klickt auf "Weiter"
-   - Update-Intervall von 30 Minuten auswählen und auf "Weiter" klicken
-   - Kalendernamen eingeben und auf "Weiter" klicken
-   - Klickt auf "Fertig"
-4. Fertig!
+*Quelle: https://support.google.com/calendar/answer/37100?hl=de&co=GENIE.Platform%3DDesktop*
 
 ### Apple Kalender
 
-Ihr könnt die Prime League Matches in euren Apple Kalender integrieren. Dazu müsst ihr nur eure TEAM-ID
-ermitteln und im Link ersetzen und den Link in euren Apple Kalender importieren.
+1. Öffnet euren Apple Kalender auf dem Computer
+2. Wähle die Option "Ablage" > "Neues Kalenderabonnement"
+3. Fügt euren Feed-Link in das Feld "Kalender-URL" ein und klickt auf "Abonnieren"
+4. Gebt einen Namen für den Kalender ein (bspw. "Prime League") und wähle eine Farbe aus, damit du ihn auf deinem
+   Kalender gut lesen kannst.
+5. Wähle im Menü "Ort" die Option "iCloud" aus, damit der Kalender auf all deinen Geräten verfügbar ist und klicke
+   auf "OK".
 
-1. Ermittelt eure TEAM-ID. Diese findet ihr in der URL eures Teams auf der Prime League Website.
-   Beispiel: `https://www.primeleague.gg/leagues/teams/105959-les-primebot-devs` → `105959` ist die TEAM-ID.
-2. Ersetzt `TEAM-ID` im folgenden Link durch eure TEAM-ID:
-   `https://primebot.de/api/v1/teams/<TEAM-ID>/feed` → `https://primebot.de/api/v1/teams/105959/feed`
-3. Fügt den Link in euren Apple Kalender hinzu:
-   - Öffnet euren Apple Kalender auf dem Computer
-   - Klickt auf "Ablage" → "Neues Kalenderabo"
-   - Fügt den Link ein und klickt auf "Abonnieren"
-   - Gebt einen Namen für den Kalender ein und klickt auf "OK"
-   - Klickt auf "Fertig"
-- Fertig!
+*Quelle: https://support.apple.com/de-de/102301*
+
+
+### Thunderbird Kalender
+
+1. Öffnet euren Thunderbird
+2. Wählt auf dem Tab "Home" die Option "Neuen Kalender erstellen" > "Im Netzwerk" > "iCalendar (ICS)" aus
+3. Fügt euren Feed-Link in das Feld "Standort" ein und klickt auf "Weiter"
+4. Benennt den Kalender (bspw. "Prime League"). Dieser Name wird in der Kalenderliste von Thunderbird angezeigt
+5. Klickt auf "Fertig"
+
+*Quelle: https://support.mozilla.org/de/kb/Ferienkalender-hinzufuegen*
 
 ### Outlook Kalender
 
-Aus irgendeinem Grund ist es nicht möglich, den Kalender in Outlook hinzuzufügen. Wenn ihr wisst, wie es geht,
+Aus einem uns unbekannten Grund ist es nicht möglich, den Kalender in Outlook hinzuzufügen. Wenn ihr wisst, wie es geht,
 lasst es uns bitte wissen. Joint dazu einfach unserem [Discord-Server](https://discord.gg/K8bYxJMDzu).
