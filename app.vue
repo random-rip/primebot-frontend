@@ -63,6 +63,7 @@ import {
   MenuOption,
   NConfigProvider,
   NDialogProvider,
+  NDropdown,
   NIcon,
   NLayout,
   NLayoutContent,
@@ -73,7 +74,6 @@ import {
   NMessageProvider,
   NNotificationProvider,
   NSpace,
-  NDropdown,
 } from "naive-ui";
 
 import {NuxtLink} from "#components";
@@ -131,6 +131,30 @@ const menuOptions: Array<MenuOption> = [
     key: 'information',
     // icon: renderIcon(InfoIcon),
     children: [
+      {
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/calendar'
+                },
+                {default: () => 'Kalender'}
+            ),
+        key: 'calendar',
+        // icon: renderIcon(HomeIcon)
+      },
+      {
+        label: () =>
+            h(
+                NuxtLink,
+                {
+                  to: '/api'
+                },
+                {default: () => 'Unofficial Prime League API'}
+            ),
+        key: 'api',
+        // icon: renderIcon(HomeIcon)
+      },
       {
         label: () =>
             h(

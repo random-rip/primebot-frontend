@@ -28,6 +28,7 @@ Die API ist auf 1000 Anfragen pro Tag pro Benutzer begrenzt. Sollte dies nicht a
 Die API ist Open Source und wir freuen uns über Beiträge. Wenn du einen Fehler findest oder eine Verbesserung
 vorschlagen möchtest, erstelle bitte ein Issue oder ein Pull Request
 auf [GitHub](https://github.com/random-rip/primebot_backend).
+<br>
 (❁´◡`❁)
 
 ### FAQ
