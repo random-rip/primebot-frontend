@@ -28,6 +28,9 @@
         <n-form-item label="Benachrichtigung bei Terminbestätigungen">
           <n-switch v-model:value="schedulingConfirmation"></n-switch>
         </n-form-item>
+        <n-form-item label="Benachrichtigung bei neuen Matches">
+          <n-switch v-model:value="newMatches"></n-switch>
+        </n-form-item>
         <n-form-item label="Benachrichtigung bei neuen Kommentaren (außer Teammitgliedern)">
           <n-switch v-model:value="newComments"></n-switch>
         </n-form-item>
@@ -74,7 +77,7 @@ const error = ref()
 const {
   pending,
   data: settings,
-} = useFetch(() => `https://www.primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {
+} = useFetch(() => `https://primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {
   server: false, onResponseError: ({response}) => {
     error.value = response._data
   }
@@ -138,7 +141,7 @@ const submitting = ref(false)
 
 const submitSettings = async () => {
   if (!submitting.value) {
-    const {data, pending, error} = await useFetch('https://www.primebot.me/api/settings/', {
+    const {data, pending, error} = await useFetch('https://primebot.me/api/settings/', {
       method: 'POST', body: {
         ...settings.value,
         enc: route.query.enc,
@@ -214,6 +217,19 @@ const schedulingConfirmation = computed({
   set(value) {
     settings.value.settings.find((s) => {
       return s.key === "SCHEDULING_CONFIRMATION"
+    }).value = value
+  }
+})
+
+const newMatches = computed({
+  get() {
+    return settings.value?.settings.find((s) => {
+      return s.key === "NEW_MATCHES_NOTIFICATION"
+    }).value
+  },
+  set(value) {
+    settings.value.settings.find((s) => {
+      return s.key === "NEW_MATCHES_NOTIFICATION"
     }).value = value
   }
 })

@@ -26,7 +26,7 @@ import {NH1, NSpace, NCard, NText} from 'naive-ui'
 import {useLazyFetch, useMeta} from "#imports";
 import {useFetch} from "#app";
 
-const { pending, data: status } = useFetch(() => 'https://www.primebot.me/api/status/', {
+const { pending, data: status } = useFetch(() => 'https://primebot.me/api/status/', {
   server: false, })
 
 useMeta({title: 'Status'})

@@ -101,7 +101,7 @@ const largerThanSm = breakpoints.greater('sm')
 const {data: messages} = await useAsyncData('messages', () => queryContent('/home/overview/features/messages').find())
 const {data: featuresMeta} = await useAsyncData('featuresMeta', () => queryContent('home/overview/meta').findOne())
 
-const { pending, data: status } = useFetch(() => 'https://www.primebot.me/api/status/', {
+const { pending, data: status } = useFetch(() => 'https://primebot.me/api/status/', {
   server: false, })
 
 const getMessage = (path) => {
