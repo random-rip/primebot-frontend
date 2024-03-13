@@ -11,7 +11,7 @@ Viele Organisationen möchten gerne ihre Teams und Spieler:innen auf ihrer eigen
 bietet bis jetzt keine offizielle API an, um die Daten der Teams und Spieler:innen abzurufen. Deshalb haben wir eine
 Unofficial API entwickelt.
 
-Alle Endpunkte sind in der [Open API Swagger-Dokumentation](https://primebot.me/api/v1/) online einsehbar.
+Alle Endpunkte sind in der [Open API Swagger-Dokumentation](/api/v1/) online einsehbar.
 
 Unter anderem bietet die API folgende Informationen:
 

@@ -1,0 +1,7 @@
+services:
+  app:
+    ports:
+      - 80:80
+    build:
+      context: .
+    command: ["caddy","file-server", "--listen", ":80", "--root", "/app",]

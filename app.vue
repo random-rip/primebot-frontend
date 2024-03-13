@@ -136,7 +136,7 @@ const menuOptions: Array<MenuOption> = [
             h(
                 NuxtLink,
                 {
-                  to: '/calendar'
+                  to: '/information/calendar'
                 },
                 {default: () => 'Kalender'}
             ),
@@ -148,7 +148,7 @@ const menuOptions: Array<MenuOption> = [
             h(
                 NuxtLink,
                 {
-                  to: '/api'
+                  to: '/information/api'
                 },
                 {default: () => 'Unofficial Prime League API'}
             ),

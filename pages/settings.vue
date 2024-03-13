@@ -80,7 +80,7 @@ const error = ref()
 const {
   pending,
   data: settings,
-} = useFetch(() => `https://primebot.me/api/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {
+} = useFetch(() => `/api/v1/settings/?enc=${route.query.enc}&hash=${route.query.hash}&platform=${route.query.platform}`, {
   server: false, onResponseError: ({response}) => {
     error.value = response._data
   }
@@ -144,7 +144,7 @@ const submitting = ref(false)
 
 const submitSettings = async () => {
   if (!submitting.value) {
-    const {data, pending, error} = await useFetch('https://primebot.me/api/settings/', {
+    const {data, pending, error} = await useFetch('/api/v1/settings/', {
       method: 'POST', body: {
         ...settings.value,
         enc: route.query.enc,
