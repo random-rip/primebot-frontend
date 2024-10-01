@@ -25,6 +25,9 @@
         <n-form-item label="Benachrichtigung bei Terminvorschlägen vom Gegner">
           <n-switch v-model:value="enemySchedulingSuggestion"></n-switch>
         </n-form-item>
+        <n-form-item label="Umfrage in Discord bei Terminvorschlägen vom Gegner">
+          <n-switch v-model:value="enemySchedulingSuggestionPoll"></n-switch>
+        </n-form-item>
         <n-form-item label="Benachrichtigung bei Terminbestätigungen">
           <n-switch v-model:value="schedulingConfirmation"></n-switch>
         </n-form-item>
@@ -194,7 +197,18 @@ const enemySchedulingSuggestion = computed({
     }).value = value
   }
 })
-
+const enemySchedulingSuggestionPoll = computed({
+  get() {
+    return settings.value?.settings.find((s) => {
+      return s.key === "ENEMY_SCHEDULING_SUGGESTION_POLL"
+    }).value
+  },
+  set(value) {
+    settings.value.settings.find((s) => {
+      return s.key === "ENEMY_SCHEDULING_SUGGESTION_POLL"
+    }).value = value
+  }
+})
 const teamSchedulingSuggestion = computed({
   get() {
     return settings.value?.settings.find((s) => {
