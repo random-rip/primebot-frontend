@@ -31,6 +31,9 @@
         <n-form-item label="Benachrichtigung bei Terminbestätigungen">
           <n-switch v-model:value="schedulingConfirmation"></n-switch>
         </n-form-item>
+        <n-form-item label="Discordevent bei Terminbestätigungen (beta)">
+          <n-switch v-model:value="createDiscordEventOnSchedulingConfirmation"></n-switch>
+        </n-form-item>
         <n-form-item label="Benachrichtigung bei neuen Matches">
           <n-switch v-model:value="newMatches"></n-switch>
         </n-form-item>
@@ -231,6 +234,19 @@ const schedulingConfirmation = computed({
   set(value) {
     settings.value.settings.find((s) => {
       return s.key === "SCHEDULING_CONFIRMATION"
+    }).value = value
+  }
+})
+
+const createDiscordEventOnSchedulingConfirmation = computed({
+  get() {
+    return settings.value?.settings.find((s) => {
+      return s.key === "CREATE_DISCORD_EVENT_ON_SCHEDULING_CONFIRMATION"
+    }).value
+  },
+  set(value) {
+    settings.value.settings.find((s) => {
+      return s.key === "CREATE_DISCORD_EVENT_ON_SCHEDULING_CONFIRMATION"
     }).value = value
   }
 })
