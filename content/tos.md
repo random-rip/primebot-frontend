@@ -26,7 +26,7 @@ Mit der Benutzung des Bots erklärst du dich wie nachfolgend einverstanden:
    nicht gewährleistet werden. Es kann daher vorkommen, dass es aufgrund von internen Wartungen, Wartungen externer
    genutzten APIs oder höherer Gewalt zu Unterbrechungen der Verfügbarkeit kommt.
 9. Der Bot wurde nach bestem Gewissen realisiert, trotzdem übernehmen wir keine Haftung bei Fehlfunktionen.
-10. Wir übernehmen keine Haftung für Inhalte Dritter, insbesondere der Daten der Strauss Prime League und Bildern der
+10. Wir übernehmen keine Haftung für Inhalte Dritter, insbesondere der Daten der Prime League und Bildern der
     [Dog-API](https://random.dog/) und [Cat-API](https://cataas.com/c/gif).
 
 ## Schlussbestimmungen
