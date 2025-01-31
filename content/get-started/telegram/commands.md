@@ -10,6 +10,9 @@ description: Hier findest du eine Übersicht aller Befehle, die in Telegram verf
 - `/settings`
   - Erstellt einen Link, in denen Benachrichtigungseinstellungen für das Team und die Gruppe gesetzt werden können. Der
     Link ist 60 Minuten gültig.
+- `/match [match_day]`
+  - Gibt eine detaillierte Übersicht über den Spieltag: Terminstatus mit allen Terminvorschlägen, alle Scouting-Links,
+    leagueofgraphs.com Link der Spieler:innen, Informationen über den Spieltag und das Ergebnis des Matches.
 - `/matches`
   - Gibt einen Überblick über alle noch nicht gespielten Spiele, sowie den Status der Terminvorschläge und Lineups der
     Gegner.

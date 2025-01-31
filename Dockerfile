@@ -1,4 +1,4 @@
-FROM node:16 as app
+FROM node:16 AS app
 
 WORKDIR /app
 
@@ -8,6 +8,7 @@ RUN npm ci
 
 COPY . .
 
+RUN npm run download_changelogs
 RUN npm run generate
 
 FROM caddy

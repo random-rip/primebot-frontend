@@ -31,7 +31,7 @@
         <n-form-item label="Benachrichtigung bei Terminbestätigungen">
           <n-switch v-model:value="schedulingConfirmation"></n-switch>
         </n-form-item>
-        <n-form-item label="Discordevent bei Terminbestätigungen (beta)">
+        <n-form-item label="Discordevent bei Terminbestätigungen">
           <n-switch v-model:value="createDiscordEventOnSchedulingConfirmation"></n-switch>
         </n-form-item>
         <n-form-item label="Benachrichtigung bei neuen Matches">

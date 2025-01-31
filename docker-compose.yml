@@ -1,5 +1,6 @@
 services:
   app:
+    image: orbisk/primebot-frontend
     ports:
       - 80:80
     build:
