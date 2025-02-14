@@ -8,7 +8,18 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@nuxt/ui-pro',
+    '@nuxt/icon'
   ],
+
+  icon: {
+    customCollections: [
+      {
+        prefix: 'primebot',
+        dir: './app/assets/primebot-icons'
+      },
+    ],
+  },
 
   devtools: {
     enabled: true,
@@ -71,6 +82,8 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  css: ['~/assets/css/main.css'],
 
   pwa,
 })
