@@ -142,20 +142,22 @@ const footerItems = [
 </script>
 
 <template>
-  <div class="h-screen flex flex-col">
+    <UBanner icon="i-lucide-construction" title="PrimeBot Website V3 Work in Progress" close/>
     <UHeader title="PrimeBot">
       <div class="flex items-center">
         <UNavigationMenu :items="items" class="w-full justify-center"/>
-        <UColorModeSwitch />
+        <UColorModeSwitch/>
       </div>
     </UHeader>
-    <slot></slot>
+    <UMain>
+     <slot></slot>
+    </UMain>
     <UFooter>
       <template #left>
         <p class="text-(--ui-text-muted) text-sm">Copyright © {{ new Date().getFullYear() }}</p>
       </template>
 
-      <UNavigationMenu :items="footerItems" variant="link" />
+      <UNavigationMenu :items="footerItems" variant="link"/>
 
       <template #right>
         <UButton
@@ -176,5 +178,4 @@ const footerItems = [
         />
       </template>
     </UFooter>
-  </div>
 </template>
