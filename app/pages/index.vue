@@ -23,6 +23,7 @@ const links = ref([
 </script>
 
 <template>
+  <UMain>
     <UPageHero
       class="h-full flex items-center justify-center"
       title="PrimeBot"
@@ -30,8 +31,9 @@ const links = ref([
       reverse
       :links="links"
     >
-      <div class="flex justify-center text-white">
-        <Icon name="primebot:logo-filled" style="color: white" />
+      <div class="flex justify-center">
+        <Icon name="primebot:logo-filled" />
       </div>
     </UPageHero>
+  </UMain>
 </template>

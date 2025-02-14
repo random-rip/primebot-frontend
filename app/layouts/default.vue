@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const items = ref([
+const items = [
   {
     label: 'Guide',
     icon: 'i-lucide-book-open',
@@ -119,15 +119,62 @@ const items = ref([
     icon: 'i-lucide-circle-help',
     disabled: true
   }
-])
+]
+
+const footerItems = [
+  {
+    label: 'Datenschutz',
+    to: 'https://www.figma.com/community/file/1288455405058138934',
+  },
+  {
+    label: 'Impressum',
+    to: 'https://stackblitz.com/edit/nuxt-ui',
+  },
+  {
+    label: 'Kontakt',
+    to: '/roadmap'
+  },
+  {
+    label: 'Nutzungsbedingungen',
+    to: 'https://github.com/nuxt/ui/releases',
+  }
+]
 </script>
 
 <template>
   <div class="h-screen flex flex-col">
-    <UHeader title="PrimeBot"><UNavigationMenu :items="items" class="w-full justify-center"/></UHeader>
-    <UMain>
-      <slot></slot>
-    </UMain>
-    <UFooter>blah</UFooter>
+    <UHeader title="PrimeBot">
+      <div class="flex items-center">
+        <UNavigationMenu :items="items" class="w-full justify-center"/>
+        <UColorModeSwitch />
+      </div>
+    </UHeader>
+    <slot></slot>
+    <UFooter>
+      <template #left>
+        <p class="text-(--ui-text-muted) text-sm">Copyright © {{ new Date().getFullYear() }}</p>
+      </template>
+
+      <UNavigationMenu :items="footerItems" variant="link" />
+
+      <template #right>
+        <UButton
+            icon="i-simple-icons-discord"
+            color="neutral"
+            variant="ghost"
+            to="https://chat.nuxt.dev"
+            target="_blank"
+            aria-label="Discord"
+        />
+        <UButton
+            icon="i-simple-icons-github"
+            color="neutral"
+            variant="ghost"
+            to="https://github.com/random-rip"
+            target="_blank"
+            aria-label="GitHub"
+        />
+      </template>
+    </UFooter>
   </div>
 </template>
