@@ -42,6 +42,7 @@ const otherLocale = computed(() => locales.value.find(l => l.code !== locale.val
       <template #right>
         <UButton
           :to="switchLocalePath(otherLocale!.code)"
+          external
           :label="otherLocale!.name"
           icon="i-lucide-languages"
           color="neutral"
