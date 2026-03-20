@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/image', '@nuxt/a11y', 'nuxt-studio'],
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
+  future: {
+    compatibilityVersion: 5
+  },
   i18n: {
     locales: [
       { code: 'de', name: 'Deutsch', language: 'de-DE', file: 'de.json' },

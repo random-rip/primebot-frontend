@@ -32,17 +32,18 @@ const footerLinks = computed(() => [
 ])
 
 const otherLocale = computed(() => locales.value.find(l => l.code !== locale.value))
+
+const localeRoute = useLocaleRoute()
 </script>
 
 <template>
   <UApp>
-    <UHeader :title="appConfig.header.title" :to="appConfig.header.to">
+    <UHeader title="PrimeBot" :to="localeRoute({path:'/'})">
       <UNavigationMenu :items="headerLinks" />
 
       <template #right>
         <UButton
           :to="switchLocalePath(otherLocale!.code)"
-          external
           :label="otherLocale!.name"
           icon="i-lucide-languages"
           color="neutral"
