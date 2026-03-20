@@ -1,8 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/image', '@nuxt/a11y', 'nuxt-studio'],
+  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/image', '@nuxt/a11y', 'nuxt-studio'],
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
+  i18n: {
+    locales: [
+      { code: 'de', name: 'Deutsch', language: 'de-DE', file: 'de.json' },
+      { code: 'en', name: 'English', language: 'en-US', file: 'en.json' },
+    ],
+    langDir: 'locales',
+    strategy: 'prefix_except_default',
+    defaultLocale: 'de',
+  },
   css: ['~/assets/css/main.css'],
   studio: {
     repository: {

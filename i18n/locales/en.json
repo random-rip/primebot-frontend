@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "docs": "Docs",
+    "calendar": "Calendar",
+    "changelog": "Changelog",
+    "about": "About",
+    "contact": "Contact",
+    "partner": "Partners",
+    "openSource": "Open Source",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "tos": "Terms of Service",
+    "discord": "Discord",
+    "telegram": "Telegram",
+    "api": "API"
+  }
+}

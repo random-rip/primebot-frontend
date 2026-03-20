@@ -1,5 +1,14 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryCollection('landing').path('/').first())
+import type { Collections } from '@nuxt/content'
+
+const { locale } = useI18n()
+const collectionName = computed(() => `landing_${locale.value}` as keyof Collections)
+
+const { data: page } = await useAsyncData('index', () =>
+  queryCollection(collectionName.value).path('/').first(),
+  { watch: [locale] },
+)
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
@@ -12,7 +21,7 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
+  ogDescription: description,
 })
 </script>
 
