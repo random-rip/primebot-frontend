@@ -6,7 +6,7 @@ seo:
 
 ::u-page-hero
 ---
-orientation: vertical
+orientation: horizontal
 ---
 #headline
 Discord & Telegram Bot
@@ -32,6 +32,9 @@ The easy way to organize your Prime League team.
   ---
   Telegram
   :::
+
+#default
+:prime-bot-logo{class="w-full max-w-sm mx-auto"}
 ::
 
 ::u-page-section
