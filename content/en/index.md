@@ -7,6 +7,9 @@ seo:
 ::u-page-hero
 ---
 orientation: horizontal
+ui:
+  wrapper: order-last lg:order-first text-center lg:text-left
+  links: justify-center lg:justify-start
 ---
 #headline
 Discord & Telegram Bot
