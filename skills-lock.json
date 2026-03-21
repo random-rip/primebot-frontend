@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "make-content-editable": {
+      "source": "nuxt-content/nuxt-studio",
+      "sourceType": "github",
+      "computedHash": "44240f08055ca322af49f6ff699a0c0f359c9f7e41e76da2f01df8bb09253924"
+    }
+  }
+}
