@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 5
   },
+  experimental: {
+    asyncContext: true
+  },
   i18n: {
     locales: [
       { code: 'de', name: 'Deutsch', language: 'de-DE', file: 'de.json' },

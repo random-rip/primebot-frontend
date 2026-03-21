@@ -38,6 +38,7 @@ const localeRoute = useLocaleRoute()
 
 <template>
   <UApp>
+    <NuxtLoadingIndicator />
     <UHeader title="PrimeBot" :to="localeRoute({path:'/'})">
       <UNavigationMenu :items="headerLinks" />
 
@@ -72,9 +73,11 @@ const localeRoute = useLocaleRoute()
       </template>
     </UHeader>
 
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <UMain>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </UMain>
 
     <UFooter>
       <template #left>
