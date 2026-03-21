@@ -4,3 +4,5 @@ allowBuilds:
   esbuild: true
   sharp: true
   vue-demi: true
+patchedDependencies:
+  nuxt-studio: patches/nuxt-studio.patch

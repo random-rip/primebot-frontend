@@ -1,0 +1,13 @@
+diff --git a/dist/module/runtime/utils/source.js b/dist/module/runtime/utils/source.js
+index ca540a25ae1a1b2b4141b9fc487a2fef35d37209..b444e3420a96e5985bd3b0eea3d9b868112a6f85 100644
+--- a/dist/module/runtime/utils/source.js
++++ b/dist/module/runtime/utils/source.js
+@@ -13,7 +13,7 @@ export function getCollectionSourceById(id, sources) {
+   const prefixAndPath = rest.join("/");
+   const matchedSource = sources.find((source) => {
+     const prefix = source.prefix;
+-    if (!prefix) {
++    if (prefix == null) {
+       return false;
+     }
+     if (!withLeadingSlash(prefixAndPath).startsWith(prefix)) {
