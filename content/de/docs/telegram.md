@@ -18,6 +18,100 @@ Schreibe `/start` in den Chat. Nach der Antwort des PrimeBots musst du den Team-
 Personalisiere den Bot mit `/settings`, sodass du nur die Benachrichtigungen bekommst, die du möchtest.
 ::
 
+## Features
+
+::u-page-section
+#title
+Features
+
+#description
+Alles was du brauchst, um dein Prime League Team zu organisieren.
+
+#features
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-bell
+  ---
+  #title
+  Terminvorschläge
+  #description
+  Erhalte Benachrichtigungen bei neuen Terminvorschlägen — von euch oder vom Gegner.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-check-circle
+  ---
+  #title
+  Terminbestätigungen
+  #description
+  Werde informiert, sobald ein Termin bestätigt wurde.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-message-square
+  ---
+  #title
+  Kommentare
+  #description
+  Erhalte Benachrichtigungen bei neuen Kommentaren unter Matches.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-users
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Lineup-Änderungen
+  #description
+  Behalte den Überblick über Lineup-Änderungen der Gegner.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-calendar-days
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Wöchentliche Übersicht
+  #description
+  Erhalte eine wöchentliche Übersicht aller Matches in der Woche.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-info
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Detaillierte Übersichten
+  #description
+  Detaillierte Übersicht zu Matches mit Scouting-Links und Spielerinformationen.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-settings
+  ---
+  #title
+  Personalisierung
+  #description
+  Personalisiere deine Benachrichtigungen nach deinen Wünschen.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-languages
+  ---
+  #title
+  Mehrere Sprachen
+  #description
+  Unterstützung für Deutsch und Englisch.
+  :::
+::
+
 ## Befehle
 
 - `/start` — Startet die Konversation um ein Team zu registrieren. Danach muss eine Team-URL eingegeben werden. In der Gruppe darf noch kein Team registriert sein und das Team darf in keiner anderen Gruppe registriert sein.

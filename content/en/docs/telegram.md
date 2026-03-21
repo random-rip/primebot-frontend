@@ -18,6 +18,100 @@ Type `/start` in the chat. After PrimeBot responds, enter your Prime League team
 Customize the bot with `/settings` so you only receive the notifications you want.
 ::
 
+## Features
+
+::u-page-section
+#title
+Features
+
+#description
+Everything you need to organize your Prime League team.
+
+#features
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-bell
+  ---
+  #title
+  Scheduling Suggestions
+  #description
+  Get notified about new scheduling suggestions — from your team or the opponent.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-check-circle
+  ---
+  #title
+  Schedule Confirmations
+  #description
+  Get notified when a match schedule has been confirmed.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-message-square
+  ---
+  #title
+  Comments
+  #description
+  Get notified about new comments on matches.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-users
+  badge: PrimeBot Exclusive
+  ---
+  #title
+  Lineup Changes
+  #description
+  Stay on top of opponent lineup changes.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-calendar-days
+  badge: PrimeBot Exclusive
+  ---
+  #title
+  Weekly Overview
+  #description
+  Receive a weekly overview of all matches for the week.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-info
+  badge: PrimeBot Exclusive
+  ---
+  #title
+  Detailed Overviews
+  #description
+  Detailed match overviews with scouting links and player information.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-settings
+  ---
+  #title
+  Customization
+  #description
+  Customize your notifications to your preferences.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-languages
+  ---
+  #title
+  Multiple Languages
+  #description
+  Support for German and English.
+  :::
+::
+
 ## Commands
 
 - `/start` — Starts the conversation to register a team. You will then need to enter a team URL. No team may already be registered in the group, and the team must not be registered in any other group.

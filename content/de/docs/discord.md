@@ -21,6 +21,132 @@ Beispiel: `/start https://www.primeleague.gg/leagues/teams/105959-leipzig-esport
 Mit `/settings` kannst du die Benachrichtigungen personalisieren, eine andere Scouting-Website festlegen oder eine Discordrolle festlegen.
 ::
 
+## Features
+
+::u-page-section
+#title
+Features
+
+#description
+Alles was du brauchst, um dein Prime League Team zu organisieren.
+
+#features
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-bell
+  ---
+  #title
+  Terminvorschläge
+  #description
+  Erhalte Benachrichtigungen bei neuen Terminvorschlägen — von euch oder vom Gegner.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-check-circle
+  ---
+  #title
+  Terminbestätigungen
+  #description
+  Werde informiert, sobald ein Termin bestätigt wurde.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-message-square
+  ---
+  #title
+  Kommentare
+  #description
+  Erhalte Benachrichtigungen bei neuen Kommentaren unter Matches.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-users
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Lineup-Änderungen
+  #description
+  Behalte den Überblick über Lineup-Änderungen der Gegner.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-calendar-days
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Wöchentliche Übersicht
+  #description
+  Erhalte eine wöchentliche Übersicht aller Matches in der Woche.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-info
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Detaillierte Übersichten
+  #description
+  Detaillierte Übersicht zu Matches mit Scouting-Links und Spielerinformationen.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-settings
+  ---
+  #title
+  Personalisierung
+  #description
+  Personalisiere deine Benachrichtigungen nach deinen Wünschen.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-languages
+  ---
+  #title
+  Mehrere Sprachen
+  #description
+  Unterstützung für Deutsch und Englisch.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-clock
+  ---
+  #title
+  Zeitzonen
+  #description
+  Termine werden in der richtigen Zeitzone angezeigt.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-at-sign
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Rollenerwähnung
+  #description
+  Erwähne eine Discord-Rolle bei Benachrichtigungen.
+  :::
+
+  :::prime-bot-feature
+  ---
+  icon: i-lucide-calendar-check
+  badge: Nur mit PrimeBot
+  ---
+  #title
+  Discord Events
+  #description
+  Erstelle automatisch Discord Events für anstehende Matches.
+  :::
+::
+
 ## Befehle
 
 - `/start [TEAM-LINK]` — Registriert das übergebene Team in dem Channel. In dem Channel darf noch kein Team registriert sein und das Team darf in keinem anderen Channel registriert sein.
