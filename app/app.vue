@@ -33,13 +33,13 @@ const footerLinks = computed(() => [
 
 const otherLocale = computed(() => locales.value.find(l => l.code !== locale.value))
 
-const localeRoute = useLocaleRoute()
+const localePath = useLocalePath()
 </script>
 
 <template>
   <UApp>
     <NuxtLoadingIndicator />
-    <UHeader title="PrimeBot" :to="localeRoute({path:'/'})">
+    <UHeader title="PrimeBot" :to="localePath('/')">
       <UNavigationMenu :items="headerLinks" />
 
       <template #right>
