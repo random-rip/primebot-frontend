@@ -13,5 +13,8 @@
     "discord": "Discord",
     "telegram": "Telegram",
     "api": "API"
+  },
+  "changelog": {
+    "description": "Alle Änderungen und Updates des PrimeBot."
   }
 }
