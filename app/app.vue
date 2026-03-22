@@ -42,6 +42,7 @@ const localePath = useLocalePath()
       <UNavigationMenu :items="headerLinks" />
 
       <template #right>
+        <UColorModeButton />
         <UButton
           :to="switchLocalePath(otherLocale!.code)"
           :label="otherLocale!.name"
