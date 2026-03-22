@@ -49,6 +49,8 @@ class: w-full max-w-sm mx-auto
 ::
 ::
 
+:team-counter
+
 ::u-page-section
 #title
 Features

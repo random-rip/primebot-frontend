@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/image', '@nuxt/a11y', 'nuxt-studio', '@nuxtjs/mdc'],
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: '',
+    },
+  },
   compatibilityDate: '2024-04-03',
   future: {
     compatibilityVersion: 5

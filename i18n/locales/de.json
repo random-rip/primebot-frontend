@@ -15,5 +15,8 @@
   },
   "changelog": {
     "description": "Alle Änderungen und Updates des PrimeBot."
+  },
+  "teamCounter": {
+    "text": "{count} Teams benutzen bereits den PrimeBot (. ❛ ᴗ ❛.)"
   }
 }

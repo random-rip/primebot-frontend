@@ -39,6 +39,8 @@ Der einfache Weg euer Prime League Team zu organisieren.
   :::
 ::
 
+:team-counter
+
 ::u-page-section
 #title
 Features
