@@ -22,6 +22,6 @@ Most of us work as developers at singularIT. They give us the opportunity to wor
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=random-rip/primebot_backend)](https://github.com/random-rip/primebot_backend/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=random-rip/primebot_backend&columns=5){.max-w-fit}](https://github.com/random-rip/primebot_backend/graphs/contributors)
 
 Made with [contrib.rocks](https://contrib.rocks)
