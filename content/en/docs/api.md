@@ -5,7 +5,10 @@ description: Documentation for the unofficial Prime League API.
 
 # Unofficial Prime League API
 
-::callout{icon="i-lucide-info"}
+::callout
+---
+icon: i-lucide-info
+---
 Only data from registered teams (that use PrimeBot) is available.
 ::
 

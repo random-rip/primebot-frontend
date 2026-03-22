@@ -7,7 +7,14 @@ description: Kontaktiere das PrimeBot Team.
 
 ## Socials
 
-:u-button{to="https://discord.gg/7NYgT2uFPm" icon="i-lucide-message-circle" target="_blank" label="Discord"}
+::u-button
+---
+to: https://discord.gg/7NYgT2uFPm
+icon: i-lucide-message-circle
+target: _blank
+label: Discord
+---
+::
 
 ## Core Crew
 

@@ -52,19 +52,31 @@ Use `/settings` to customize notifications, set a different scouting website, or
 ## FAQ
 
 ::accordion
-  :::accordion-item{label="No notifications are being sent in the channel (anymore), even though we should be receiving them."}
+  :::accordion-item
+  ---
+  label: No notifications are being sent in the channel (anymore), even though we
+    should be receiving them.
+  ---
   1. Notifications are not sent in real time! PrimeBot scans the Prime League website for new information every 15 minutes. For this reason, notifications are sent within 15 minutes at the latest. _Currently, PrimeBot is rate-limited by PRM to one request per second. Important messages should arrive within about 20 minutes at the latest. Notifications for match days further in the future have lower priority._
   2. Make sure the bot has all required permissions. [See invite link](https://discord.com/oauth2/authorize?client_id=739550721703280700).
   3. If problems persist, please contact us.
   :::
 
-  :::accordion-item{label="After adding the bot to the server and entering a command, it doesn't respond."}
+  :::accordion-item
+  ---
+  label: After adding the bot to the server and entering a command, it doesn't
+    respond.
+  ---
   1. Make sure the bot has all required permissions. [See invite link](https://discord.com/oauth2/authorize?client_id=739550721703280700).
   2. Make sure the bot can see the channel where you entered the command.
   3. If problems persist, please contact us.
   :::
 
-  :::accordion-item{label="When using /start, I get the response &quot;No ID could be found from the given parameter.&quot;"}
+  :::accordion-item
+  ---
+  label: When using /start, I get the response "No ID could be found from the given
+    parameter."
+  ---
   Example if you want to pass the URL:
 
   ```

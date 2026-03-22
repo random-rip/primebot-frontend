@@ -49,13 +49,21 @@ Customize the bot with `/settings` so you only receive the notifications you wan
 ## FAQ
 
 ::accordion
-  :::accordion-item{label="No notifications are being sent in the channel (anymore), even though we should be receiving them."}
+  :::accordion-item
+  ---
+  label: No notifications are being sent in the channel (anymore), even though we
+    should be receiving them.
+  ---
   1. Notifications are not sent in real time! PrimeBot scans the Prime League website for new information every 15 minutes. For this reason, notifications are sent within 15 minutes at the latest. _Currently, PrimeBot is rate-limited by PRM to one request per second. Important messages should arrive within about 20 minutes at the latest. Notifications for match days further in the future have lower priority._
   2. Make sure the corresponding notifications are not disabled in your settings. Type `/settings` in the group chat and check whether the relevant notifications are enabled.
   3. If problems persist, please contact us.
   :::
 
-  :::accordion-item{label="After adding the bot to the group and entering a command, it doesn't respond."}
+  :::accordion-item
+  ---
+  label: After adding the bot to the group and entering a command, it doesn't
+    respond.
+  ---
   Make sure the bot has the following permissions:
 
   - Send messages
@@ -67,7 +75,11 @@ Customize the bot with `/settings` so you only receive the notifications you wan
   If problems persist, please contact us.
   :::
 
-  :::accordion-item{label="After entering my team, I get the response &quot;The provided URL does not match the correct format&quot;."}
+  :::accordion-item
+  ---
+  label: After entering my team, I get the response "The provided URL does not match
+    the correct format".
+  ---
 
   Example if you want to pass the URL:
 

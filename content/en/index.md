@@ -21,7 +21,12 @@ PrimeBot
 The easy way to organize your Prime League team.
 
 #links
-  :::u-button{icon="i-lucide-message-circle" size="xl" to="/en/docs/discord"}
+  :::u-button
+  ---
+  icon: i-lucide-message-circle
+  size: xl
+  to: /en/docs/discord
+  ---
   Discord
   :::
 
@@ -37,7 +42,11 @@ The easy way to organize your Prime League team.
   :::
 
 #default
-:prime-bot-logo{class="w-full max-w-sm mx-auto"}
+::prime-bot-logo
+---
+class: w-full max-w-sm mx-auto
+---
+::
 ::
 
 ::u-page-section

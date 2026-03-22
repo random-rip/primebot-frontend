@@ -36,9 +36,33 @@ Our Partners
     Your specialists for data analytics, web-based systems, and mobile app development.
 
     #footer
-    :u-button{to="https://www.singular-it.de" variant="outline" target="_blank" label="Website" icon="i-lucide-globe"}
-    :u-button{to="https://blog.singular-it.de" variant="outline" target="_blank" label="Blog" icon="i-lucide-pen-line"}
-    :u-button{to="https://www.singular-it.de/deine-karriere/dein-team" variant="outline" target="_blank" label="Team" icon="i-lucide-users"}
+    :::::u-button
+    ---
+    to: https://www.singular-it.de
+    variant: outline
+    target: _blank
+    label: Website
+    icon: i-lucide-globe
+    ---
+    :::::
+    :::::u-button
+    ---
+    to: https://blog.singular-it.de
+    variant: outline
+    target: _blank
+    label: Blog
+    icon: i-lucide-pen-line
+    ---
+    :::::
+    :::::u-button
+    ---
+    to: https://www.singular-it.de/deine-karriere/dein-team
+    variant: outline
+    target: _blank
+    label: Team
+    icon: i-lucide-users
+    ---
+    :::::
     ::::
   :::
 ::
@@ -55,7 +79,12 @@ Become a Partner
 Interested in supporting PrimeBot? We'd love to hear from you.
 
 #links
-  :::u-button{icon="i-lucide-mail" size="xl" to="/en/contact"}
+  :::u-button
+  ---
+  icon: i-lucide-mail
+  size: xl
+  to: /en/contact
+  ---
   Contact Us
   :::
 ::
