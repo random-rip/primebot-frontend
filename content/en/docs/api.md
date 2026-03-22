@@ -5,7 +5,9 @@ description: Documentation for the unofficial Prime League API.
 
 # Unofficial Prime League API
 
-**Note: Only data from registered teams (that use PrimeBot) is available.**
+::callout{icon="i-lucide-info"}
+Only data from registered teams (that use PrimeBot) is available.
+::
 
 Many organizations would like to showcase their teams and players on their own website. The Prime League does not yet
 offer an official API to retrieve team and player data. That's why we developed an Unofficial API.
