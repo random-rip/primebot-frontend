@@ -92,13 +92,13 @@ Der Feed-Link für euer Team lautet dann: `https://primebot.me/api/v1/teams/1059
 ### Google Kalender
 
 ::steps
-#### Kalender-Einstellungen öffnen
+### Kalender-Einstellungen öffnen
 
 Öffnet [diese Seite](https://calendar.google.com/calendar/u/0/r/settings/addbyurl) am Computer.
 
 Oder manuell: Öffnet euren Google Kalender auf dem Computer, klickt auf das "+"-Symbol neben "Weitere Kalender" und wählt "Per URL" aus.
 
-#### Feed-Link einfügen
+### Feed-Link einfügen
 
 Fügt euren Feed-Link ein und klickt auf "Kalender hinzufügen".
 ::
@@ -108,15 +108,15 @@ Fügt euren Feed-Link ein und klickt auf "Kalender hinzufügen".
 ### Apple Kalender
 
 ::steps
-#### Neues Kalenderabonnement
+### Neues Kalenderabonnement
 
 Öffnet euren Apple Kalender auf dem Computer und wählt "Ablage" > "Neues Kalenderabonnement".
 
-#### Feed-Link einfügen
+### Feed-Link einfügen
 
 Fügt euren Feed-Link in das Feld "Kalender-URL" ein und klickt auf "Abonnieren".
 
-#### Kalender konfigurieren
+### Kalender konfigurieren
 
 Gebt einen Namen für den Kalender ein (z.B. "Prime League") und wählt eine Farbe aus.
 Wählt im Menü "Ort" die Option "iCloud" aus, damit der Kalender auf all euren Geräten verfügbar ist, und klickt auf "OK".
@@ -127,15 +127,15 @@ Wählt im Menü "Ort" die Option "iCloud" aus, damit der Kalender auf all euren 
 ### Thunderbird Kalender
 
 ::steps
-#### Neuen Kalender erstellen
+### Neuen Kalender erstellen
 
 Öffnet Thunderbird und wählt auf dem Tab "Home" die Option "Neuen Kalender erstellen" > "Im Netzwerk" > "iCalendar (ICS)".
 
-#### Feed-Link einfügen
+### Feed-Link einfügen
 
 Fügt euren Feed-Link in das Feld "Standort" ein und klickt auf "Weiter".
 
-#### Kalender benennen
+### Kalender benennen
 
 Benennt den Kalender (z.B. "Prime League") und klickt auf "Fertig".
 ::
