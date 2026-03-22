@@ -38,7 +38,11 @@ const localePath = useLocalePath()
 <template>
   <UApp>
     <NuxtLoadingIndicator />
-    <UHeader title="PrimeBot" :to="localePath('/')">
+    <UHeader :to="localePath('/')">
+      <template #title>
+        <PrimeBotLogo class="size-8 mt-auto" />
+        <span class="text-xl font-bold">PrimeBot</span>
+      </template>
       <UNavigationMenu :items="headerLinks" />
 
       <template #right>
