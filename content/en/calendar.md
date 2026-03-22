@@ -7,8 +7,8 @@ description: Integrate your team's matches into your calendar.
 
 ::callout
 ---
-icon: i-lucide-flask
 color: warning
+icon: i-lucide-flask
 ---
 This integration is still in beta and may contain bugs.
 Let us know if you find any issues or have suggestions for improvement. Simply join our
@@ -22,24 +22,68 @@ icon: i-lucide-info
 Only data from registered teams (that use PrimeBot) is available.
 ::
 
-## Features
+::u-page-section
+#title
+Features
 
-You can integrate all of your team's matches into your calendar. When you subscribe to the calendar,
-new matches are automatically added and matches that are cancelled or rescheduled are automatically updated.
+#description
+Everything you need to know about the calendar integration.
 
-Events are displayed in your timezone by default and are set with a duration of 2 hours.
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-refresh-cw
+  title: Auto-Sync
+  ---
+  #description
+  All of your team's matches are automatically added to your calendar.
+  :::
 
-In the event details you will find the following information:
+  :::u-page-feature
+  ---
+  icon: i-lucide-calendar-sync
+  title: Auto-Update
+  ---
+  #description
+  Cancelled or rescheduled matches are automatically updated.
+  :::
 
-- The match day and link to the match on the Prime League website
-- The op.gg link for your opponent
-- The op.gg link for your opponent's lineup if available
-- Information about whether scheduling suggestions from you or your opponents are open, or if a date has been confirmed.
-  The emoji in the title tells you the current status:
-  - ⚔ Match date confirmed
-  - 📆 No dates have been suggested
-  - ✅ Your scheduling suggestions are open
-  - ⚠ Your opponent's scheduling suggestions are open!
+  :::u-page-feature
+  ---
+  icon: i-lucide-globe
+  title: Timezones
+  ---
+  #description
+  Events are displayed in your timezone with a default duration of 2 hours.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-swords
+  title: Match Info
+  ---
+  #description
+  Match day, link to the match on the Prime League website, and op.gg links for your opponents.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-search
+  title: Scouting
+  ---
+  #description
+  op.gg links for your opponent's lineup when available.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-signal
+  title: Status Indicators
+  ---
+  #description
+  Emojis in the title show the status: ⚔ Date confirmed · 📆 No suggestions · ✅ Your suggestions open · ⚠ Opponent's suggestions open
+  :::
+::
 
 ## Subscribe to Calendar
 
@@ -107,11 +151,7 @@ Name the calendar (e.g. "Prime League") and click "Finish".
 
 ### Outlook Calendar
 
-::callout
----
-icon: i-lucide-triangle-alert
-color: warning
----
+::callout{color="warning" icon="i-lucide-triangle-alert"}
 For an unknown reason, it is currently not possible to add the calendar in Outlook. If you know how to do it,
 please let us know. Simply join our [Discord server](https://discord.gg/K8bYxJMDzu).
 ::
