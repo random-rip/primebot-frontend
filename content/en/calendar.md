@@ -8,7 +8,7 @@ description: Integrate your team's matches into your calendar.
 ::callout
 ---
 color: warning
-icon: i-lucide-flask
+icon: i-lucide-triangle-alert
 ---
 This integration is still in beta and may contain bugs.
 Let us know if you find any issues or have suggestions for improvement. Simply join our

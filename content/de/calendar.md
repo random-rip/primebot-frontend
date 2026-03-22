@@ -5,7 +5,11 @@ description: Integriere die Matches deines Teams in deinen Kalender.
 
 # Kalender Integration
 
-::callout{color="warning" icon="i-lucide-flask"}
+::callout
+---
+color: warning
+icon: i-lucide-triangle-alert
+---
 Die Integration befindet sich noch in der Beta-Phase und kann Fehler enthalten.
 Lasst uns wissen, wenn ihr Fehler findet oder Verbesserungsvorschläge habt. Joint dazu einfach
 unserem [Discord-Server](https://discord.gg/K8bYxJMDzu).
