@@ -32,7 +32,12 @@ on [GitHub](https://github.com/random-rip/primebot_backend).
 
 ### FAQ
 
-> Why is the division not included in the API?
-
-The Prime League removed the division from the data available to us about a year ago. The division can now only be viewed
-on the Prime League website.
+::accordion
+  :::accordion-item
+  ---
+  label: Why is the division not included in the API?
+  ---
+  The Prime League removed the division from the data available to us about a year ago. The division can now only be viewed
+  on the Prime League website.
+  :::
+::
