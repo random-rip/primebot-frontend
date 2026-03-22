@@ -8,7 +8,7 @@ description: Partners and supporters of PrimeBot.
 Partners
 
 #description
-PrimeBot is proudly supported by partners who share our passion for esports and technology.
+PrimeBot is supported by partners who share our passion for esports and technology.
 ::
 
 ::u-page-section
