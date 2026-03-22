@@ -19,7 +19,6 @@ const headerLinks = computed(() => [
     children: [
       { label: t('nav.contact'), to: '/contact', icon: 'i-lucide-users' },
       { label: t('nav.partner'), to: '/partner', icon: 'i-lucide-handshake' },
-      { label: t('nav.openSource'), to: '/open-source', icon: 'i-lucide-github' },
     ],
   },
 ])

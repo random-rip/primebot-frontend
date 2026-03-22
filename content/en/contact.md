@@ -25,3 +25,23 @@ Most of us work as developers at singularIT. They give us the opportunity to wor
 [![Contributors](https://contrib.rocks/image?repo=random-rip/primebot_backend&columns=5){.max-w-fit}](https://github.com/random-rip/primebot_backend/graphs/contributors)
 
 Made with [contrib.rocks](https://contrib.rocks)
+
+## Open Source
+
+::u-button
+---
+to: https://github.com/random-rip/primebot_backend
+icon: i-lucide-github
+target: _blank
+label: Backend
+---
+::
+
+::u-button
+---
+to: https://github.com/random-rip/primebot-frontend
+icon: i-lucide-github
+target: _blank
+label: Frontend
+---
+::
